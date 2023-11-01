@@ -1,0 +1,34 @@
+.menu{
+    background-color:#495d43;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-style: solid ;
+    border-top-color: white;
+    border-bottom-style: solid ;
+    border-bottom-color: white;
+  
+
+}
+
+.menu .items{
+    display: flex;
+    list-style: none;
+    /*margin-left: 500px ;*/
+}
+
+.menu .items li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu .items li a{
+    padding: 7px 13px;
+    text-decoration: none ;
+    font-size: 18px;
+    display: block;
+    color: white ;
+    
+}
