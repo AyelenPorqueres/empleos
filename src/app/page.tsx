@@ -1,10 +1,16 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
+import { Logo } from "./componentes/logo/logo"
+import { Nav } from "./componentes/nav/nav"
 export default function Home() {
   return (
-    <main className={styles.main}>
-      
-    </main>
+   <>
+   <header>
+    <Logo></Logo>
+    <Nav></Nav>
+
+   </header>
+   <main>
+
+   </main>
+   </>
   )
 }
