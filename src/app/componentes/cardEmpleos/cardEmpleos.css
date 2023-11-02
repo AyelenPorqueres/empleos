@@ -1,0 +1,42 @@
+.card {
+    margin: 40px;
+   
+    padding: 5px;
+    border-style: groove 5px;
+    border-color: #495d43;
+    background-color: #eeedde;
+   
+}
+.card-body{
+    padding: 0px;
+}
+
+.card-img-top {
+    width: 90%;
+    align-self: center;
+    transform: translateY(-1rem);
+    border-radius: 5px;
+}
+.card-text-title{
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    padding: 2px;
+}
+
+.card-text-description{
+    text-align: center;
+}
+ 
+.button-vermas{
+    width: 50%;
+    background-color:#495d43 ;
+    border-color: #495d43;
+    color: white;
+
+    
+}
+
+.button-vermas:hover{
+    background-color: #769b6a;
+}
