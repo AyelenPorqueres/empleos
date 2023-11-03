@@ -2,7 +2,7 @@
     margin: 40px;
    
     padding: 5px;
-    border-style: groove 5px;
+    box-shadow: 5px 5px 5px #74926b;
     border-color: #495d43;
     background-color: #eeedde;
    
@@ -40,3 +40,4 @@
 .button-vermas:hover{
     background-color: #769b6a;
 }
+
