@@ -1,5 +1,7 @@
-export const getDatosEmpleos = () => {
-    const respuesta = [
+import Empleos from "../model/Empleos";
+
+/*export const getDatosEmpleos = () => {*/
+export const datosEmpleos: Empleos[] = [
         {
             id: 1,
             puesto: "PERSONAL TRAINING",
@@ -11,7 +13,7 @@ export const getDatosEmpleos = () => {
 
         {
             id: 2,
-            puesto: "PALERO/A",
+            puesto: "PALERO",
             cargaHoraria: 8,
             rubro: "Cantera",
             requisitos: "Mayor de 21 años, experiencia de palero/a o similar, carnet de conducir profesional.",
@@ -20,11 +22,18 @@ export const getDatosEmpleos = () => {
 
         {
             id: 3,
-            puesto: "CAJERO/A DE SUPERMERCADO",
+            puesto: "CAJERO DE SUPERMERCADO",
+            cargaHoraria: 8,
+            rubro: "Empleado de comercio",
+            requisitos: "Mayor de 18 años, secundario completo, buena predisposición.",
+            descripcion: "Supermercado El cóndor se encuentra en la búsqueda de cajero/a para cubrir turno mañana de Lunes a Sábado",
+        },
+        {
+            id: 4,
+            puesto: "CAJERO DE SUPERMERCADO",
             cargaHoraria: 8,
             rubro: "Empleado de comercio",
             requisitos: "Mayor de 18 años, secundario completo, buena predisposición.",
             descripcion: "Supermercado El cóndor se encuentra en la búsqueda de cajero/a para cubrir turno mañana de Lunes a Sábado",
         },
     ]
-}

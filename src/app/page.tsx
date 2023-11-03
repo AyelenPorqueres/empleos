@@ -2,7 +2,7 @@ import { Logo } from "./componentes/logo/logo"
 import { Nav } from "./componentes/nav/nav"
 import { CardEmpleos } from "./componentes/cardEmpleos/cardEmpleos"
 import { CardContainer } from "./componentes/cardContainer/cardContainer"
-
+import { datosEmpleos } from "./services/datosEmpleos"
 
 export default function Home() {
   return (
@@ -14,11 +14,7 @@ export default function Home() {
       </header>
       <main>
         <CardContainer>
-          <div className="row">
-          <CardEmpleos></CardEmpleos>
-          <CardEmpleos></CardEmpleos>
-          <CardEmpleos></CardEmpleos>
-          </div>
+            <CardEmpleos datos={datosEmpleos}></CardEmpleos>
         </CardContainer>
       </main>
     </>

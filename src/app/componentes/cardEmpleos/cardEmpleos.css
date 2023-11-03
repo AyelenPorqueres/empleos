@@ -1,17 +1,19 @@
 .card {
-    margin: 40px;
-   
+    width: 400px;
+    margin: 30px;
     padding: 5px;
     box-shadow: 5px 5px 5px #74926b;
     border-color: #495d43;
     background-color: #eeedde;
    
 }
+
 .card-body{
     padding: 0px;
 }
 
 .card-img-top {
+    height: 200px;
     width: 90%;
     align-self: center;
     transform: translateY(-1rem);
