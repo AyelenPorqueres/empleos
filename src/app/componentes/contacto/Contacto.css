@@ -1,9 +1,46 @@
-.bi-facebook {
-    color: white;
-    font-size: 30px
+.contacto {
+    background-color: #495d43;
+    margin-bottom: 2px;
 }
 
-.bi-instagram{
+.redes {
+    margin: 40px;
+    padding: 20px;
+    border-right: solid white 2px;
+    
+}
+
+.bi{
     color: white;
-    font-size: 30px
+    font-size: 30px;
+    margin:10 px;
+}
+
+.formulario{
+    margin:30px;
+    color:white;
+    text-align: center;
+}
+
+.formulario input{
+    background-color: lightgray;
+}
+
+.formulario textarea{
+    background-color: lightgray;
+}
+
+h4 {
+    margin:20px;
+}
+
+.btn{
+    background-color: #BBDEB1;
+    border: #BBDEB1;
+    color: #495d43;
+    width: 150px;
+}
+
+.mapa{
+    margin:30px;
 }
