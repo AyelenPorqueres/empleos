@@ -4,18 +4,17 @@ import { Footer } from "./componentes/footer/footer"
 
 export default function Home() {
   return (
-   <>
-   <header>
-    <Logo></Logo>
-    <Nav></Nav>
+    <>
+      <header>
+        <Logo></Logo>
+        <Nav></Nav>
+      </header>
+      <main>
 
-   </header>
-   <main>
-
-   </main>
-   <Footer></Footer>
-
-   </>
+      </main>
+        
+      <Footer></Footer>
+    </>
   )
 }
 
