@@ -4,7 +4,7 @@ export const Logo = () => {
 
     return (
         
-            <nav className="navbar bg-body-tertiary fondologo">
+            <nav className="fondologo">
                 <div className="container logo">
 
                     <a className="navbar-brand" href="#">

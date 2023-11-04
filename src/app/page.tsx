@@ -5,20 +5,16 @@ import { Footer } from "./componentes/footer/footer"
 
 export default function Home() {
   return (
-   <>
-   <header>
-    <Logo></Logo>
-    <Nav></Nav>
-
-   </header>
-   <main>
-
-   <Carrousel/>
-
-   </main>
-   <Footer></Footer>
-
-   </>
+    <>
+      <header>
+        <Logo></Logo>
+        <Nav></Nav>
+      </header>
+      <main>
+        <Carrousel />
+      </main>
+        <Footer></Footer>
+    </>
   )
 }
 
