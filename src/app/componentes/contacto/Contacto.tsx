@@ -1,44 +1,103 @@
+'use client'
 import './Contacto.css'
+import { useState } from 'react';
+
+
 
 export const Contacto = () => {
-  
+    const [campoValido, setCampoValido] = useState<string[]>([]);
+    let [isFormulariovalido, setisFormulariovalido] = useState(false);
+
+    const enviarContacto =(event:any) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const asunto = formData.get("asunto")?.toString();
+        const mail = formData.get("mail")?.toString();
+        const mensaje = formData.get("mensaje")?.toString();
+
+        const newCampoValido: string[] = [];
+
+        let formularioValido:boolean = true;
+
+        if (asunto) {
+            if (asunto.length < 3) {
+                newCampoValido.push('is-invalid');
+                formularioValido = false;
+            } else {
+                newCampoValido[0] = 'is-valid';
+            } 
+        }
+
+        
+        if (mail) {
+            if (mail.length < 3 || !mail.includes('@') ) {
+                newCampoValido.push('is-invalid');
+                formularioValido = false;
+            } else {
+                newCampoValido.push('is-valid');
+            }
+        }
+
+        if (mensaje) {
+            if (mensaje.length < 3 ) {
+                newCampoValido.push('is-invalid');
+                formularioValido = false;
+            } else {
+                newCampoValido.push('is-valid');
+            }
+        }
+
+        setCampoValido(newCampoValido);
+        setisFormulariovalido(formularioValido);
+    }
+
   return (
     <div className='d-flex flex-row contacto'>
+
         <div className='d-flex flex-column justify-content-evenly redes'>
             <a href="https://www.facebook.com" target="_blank">
                 <i className="bi bi-facebook"></i> 
             </a>
-            <a href=""><i className="bi bi-instagram "></i> </a>
-            <a href=""><i className="bi bi-whatsapp"></i> </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i className="bi bi-instagram "></i> 
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <i className="bi bi-whatsapp"></i>
+            </a>
         </div>
 
         <div className='formulario'>
         <h4>CONTACTANOS</h4>
-            <form className="row g-3" id ="form">
-                <label htmlFor="validationServer01" className="form-label col-sm-2">Asunto</label>
+            <form className="row g-3" id ="form" onSubmit={(event) => enviarContacto(event)}>
+                <label htmlFor="validationServer01" className="form-label col-md-2">Asunto</label>
                 <div className="col-md-10">
-                    <input type="text" className="form-control col-sm-10" id="nombre" placeholder="Ingrese asunto" required></input>
+                    <input type="text" className={`form-control ${campoValido[0]}`} id="asunto" name="asunto" placeholder="Ingrese asunto" required></input>
                     <div id="validationServer01Feedback" className="invalid-feedback">
-                        El nombre debe tener 3 o mas caracteres.
+                        El asunto debe tener 3 o mas caracteres.
                     </div>
                 </div>
                     <label htmlFor="validationServer02" className="form-label col-sm-2">Mail</label>
                     <div className="col-md-10 needs-validation">
-                    <input type="text" className="form-control" id="apellido" placeholder="Ingrese su mail" required></input>
+                    <input type="text" className={`form-control ${campoValido[1]}`} id="mail" name="mail" placeholder="Ingrese su mail" required></input>
                     <div id="validationServer02Feedback" className="invalid-feedback">
-                        El apellido debe tener 3 o mas caracteres.
+                        Ingrese un mail valido
                     </div>
                 </div>
                     <label htmlFor="validationServer03" className="form-label col-sm-2">Mensaje</label>
                   <div className="col-md-10 needs-validation">
-                    <textarea className="form-control" id="apellido" placeholder="Ingrese el mensaje" required></textarea>
+                    <textarea className={`form-control ${campoValido[2]}`} id="mensaje" name="mensaje" placeholder="Ingrese el mensaje" required></textarea>
                     <div id="validationServer03Feedback" className="invalid-feedback">
-                        El apellido debe tener 3 o mas caracteres.
+                        El asunto debe tener 3 o mas caracteres.
                     </div>
                 </div>
                 <div className="col-12">
                     <button className="btn btn-primary" type="submit" id="btn-registrarse">Enviar</button>
                 </div>
+                {isFormulariovalido && (
+                <div className="alert alert-success" role="alert">
+                    Su consulta ha sido enviada, nos pondremos en contacto al mail indicado. 
+                    Muchas gracias!
+                </div> )}
             </form>
         </div>
 
