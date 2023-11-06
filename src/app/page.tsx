@@ -9,22 +9,21 @@ import { Contacto } from "./componentes/contacto/Contacto"
 
 export default function Home() {
   return (
-   <div className="containerBody">
-   <header>
-    <Logo></Logo>
-    <Nav></Nav>
+    <div className="containerBody">
+      <header>
+        <Logo></Logo>
+        <Nav></Nav>
 
-   </header>
-   <main>
-   <Carrousel/>
-   <Info></Info>
-   <ServiciosComponent/>
-   <Contacto></Contacto>
-   </main>
+      </header>
+      
+      <main>
+        <Carrousel />
+        <Info></Info>
+        <ServiciosComponent />
+        <Contacto></Contacto>
+      </main>
 
-   
-   <Footer></Footer>
-
-   </div>
+      <Footer></Footer>
+    </div>
   )
 }
