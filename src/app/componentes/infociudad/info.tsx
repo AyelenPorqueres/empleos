@@ -11,7 +11,7 @@ export const Info = () => {
                 </div>
                 <div className='divVideo'>
                     <iframe className='video'
-                        src="https://www.youtube.com/embed/dYSs60ceFYM"  
+                        src="https://www.youtube.com/embed/ytOBqpmQKvI"  
                         title="Video de YouTube"
                     ></iframe>
                 </div>
