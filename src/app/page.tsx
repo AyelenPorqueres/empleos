@@ -3,6 +3,7 @@ import { Logo } from "./componentes/logo/logo"
 import { Nav } from "./componentes/nav/nav"
 import { Footer } from "./componentes/footer/footer"
 import ServiciosComponent from "./componentes/serviciosHome/servicios";
+import { Contacto } from "./componentes/contacto/Contacto"
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
    </header>
    <main>
    <ServiciosComponent/>
+   <Contacto></Contacto>
    </main>
    <Footer></Footer>
 
    </div>
   )
 }
-
