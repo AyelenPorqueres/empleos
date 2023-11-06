@@ -3,10 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    /* margin: 1rem; */
+    border-top: 2px solid #495D43;
+    border-bottom: 2px solid #495D43;
 
+    & h2{
+        padding: 1rem;
+        font-size: 30px;
+    }
+    
     & p{
         text-align: center;
-        margin-top: 1rem;
+        padding: 1.5rem 3rem;
+        font-size: 18px;
     }
 }
