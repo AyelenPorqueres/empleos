@@ -23,11 +23,11 @@
 }
 
 .formulario input{
-    background-color: lightgray;
+    background-color: rgb(238, 231, 231);
 }
 
 .formulario textarea{
-    background-color: lightgray;
+    background-color: rgb(238, 231, 231);
 }
 
 h4 {
