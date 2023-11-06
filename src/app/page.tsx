@@ -11,7 +11,7 @@ export default function Home() {
         <Nav></Nav>
       </header>
       <main>
-        <Carrousel />
+        <Carrousel></Carrousel>
       </main>
         <Footer></Footer>
     </>
