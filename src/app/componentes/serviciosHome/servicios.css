@@ -1,0 +1,21 @@
+.serviciosContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem; */
+    border-top: 2px solid #495D43;
+    border-bottom: 2px solid #495D43;
+    margin: 3rem 0;
+
+    & h2{
+        padding: 1rem;
+        font-size: 30px;
+    }
+    
+    & p{
+        text-align: center;
+        padding: 1.5rem 3rem;
+        font-size: 18px;
+    }
+}
