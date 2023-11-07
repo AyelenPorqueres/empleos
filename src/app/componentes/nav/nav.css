@@ -23,10 +23,11 @@
 
 .menu .items li{
     border-radius: 3px;
+
     
 }
 
-.menu .items li a{
+.menu .items .links{
     padding: 7px 13px;
     text-decoration: none ;
     font-size: 18px;
@@ -35,3 +36,4 @@
     text-align: center;
     
 }
+
