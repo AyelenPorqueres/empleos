@@ -1,0 +1,59 @@
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerInfo{
+    display: flex;
+    flex-direction: row;
+    background-color: #EEEDDE;
+    color: #495D43;
+    padding: 2rem 2rem;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: .5rem;
+
+    & p{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+
+.divVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+} 
+
+.botonInfo{
+    background-color: #495D43;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    width: 25%;
+    transition: .3s;
+}
+
+.botonInfo:hover{
+    background-color: #32492bb5;
+}
+
+.video {
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .botonInfo{
+        width: 80%;
+    }
+}
