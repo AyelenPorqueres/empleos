@@ -1,6 +1,11 @@
-h2{
+.titulo-ciudad{
     text-align: center;
-    font-size: 30px;
+    margin-top: 40px;
+    font-size: 40px;
+    background-color:#EEEDDE ;
+    padding-top: 15px;
+    color:#495D43;
+    
 }
 
 .containerInfo{
@@ -9,6 +14,7 @@ h2{
     background-color: #EEEDDE;
     color: #495D43;
     padding: 2rem 2rem;
+    margin-top: -10px;
 }
 
 .divInfo{
@@ -19,7 +25,7 @@ h2{
     padding: .5rem;
 
     & p{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.5;
     }
 }
@@ -40,10 +46,13 @@ h2{
     border-radius: 10px;
     width: 25%;
     transition: .3s;
+    box-shadow: 5px 5px 5px #74926b;
+    border-color: #74926b;
+    
 }
 
 .botonInfo:hover{
-    background-color: #32492bb5;
+    background-color: #769b6a;
 }
 
 .video {

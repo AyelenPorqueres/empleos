@@ -9,13 +9,14 @@
     margin: 3rem 0;
 
     & h2{
-        padding: 1rem;
-        font-size: 30px;
+        padding: 1.5rem;
+        font-size: 40px;
+        color:#495D43;
     }
     
     & p{
         text-align: center;
-        padding: 1.5rem 3rem;
-        font-size: 18px;
+        padding: 0.5rem 5rem 2rem 5rem;
+        font-size: 20px;
     }
 }

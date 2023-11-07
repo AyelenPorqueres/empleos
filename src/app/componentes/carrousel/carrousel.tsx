@@ -7,13 +7,13 @@ export function Carrousel() {
       <div id="carouselImagenes" className="carousel slide" data-bs-ride="true">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/Imagenes/ImagenInicio1.jpeg" className="d-block w-100" alt="..."></img>
+            <img src="/Imagenes/ImagenInicio1.jpeg" className="d-block w-100 img-carrousel" alt="..."></img>
           </div>
           <div className="carousel-item">
-            <img src="/imagenes/ImagenInicio2.jpeg" className="d-block w-100" alt="..."></img>
+            <img src="/imagenes/ImagenInicio2.jpeg" className="d-block w-100 img-carrousel" alt="..."></img>
           </div>
           <div className="carousel-item">
-            <img src="/Imagenes/ImagenInicio3.jpeg" className="d-block w-100" alt="..."></img>
+            <img src="/Imagenes/ImagenInicio3.jpeg" className="d-block w-100 img-carrousel" alt="..."></img>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="carouselImagenes" data-bs-slide="prev">

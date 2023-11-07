@@ -57,7 +57,7 @@ export const Nav = () => {
                     
                     href={
                         {
-                            pathname: '/',
+                            pathname: '/#linkcontacto',
                         }
                     }
                 >

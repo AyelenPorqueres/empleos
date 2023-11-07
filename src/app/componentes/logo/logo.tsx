@@ -6,7 +6,7 @@ export const Logo = () => {
         <nav className="fondologo">
             <div className="container logo">
                 <a className="navbar-brand" href="#">
-                    <img src="/imagenes/logomunicipio.jpeg" alt="logo de sierras bayas" width="450px" height="170px"/>
+                    <img src="/imagenes/logomunicipio.jpeg" alt="logo de sierras bayas" width="370px" height="130px"/>
                 </a>
             </div>
         </nav>
