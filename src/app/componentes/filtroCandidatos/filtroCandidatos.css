@@ -1,0 +1,43 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    background-color: #495D43;
+    height: 60px;
+
+
+}
+
+.fondoBuscadores {
+    background-color: #778E70;
+    height: 0 auto;
+    width: 0 auto;
+}
+
+.buscador {
+    color: white;
+    outline: 0;
+    border: 1.5px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.selector {
+    
+    outline: 0;
+    margin: 20px;
+    border: 1.5px;
+    border-collapse: collapse;
+    border-radius: 5px;
+
+}
+
+
+#letraBuscador::placeholder {
+    color: white;
+}
+
+select option {
+    color: black;
+    background-color: #EEEDDE;
+}
