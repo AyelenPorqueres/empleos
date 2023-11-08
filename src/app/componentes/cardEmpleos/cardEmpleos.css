@@ -30,14 +30,30 @@
     text-align: center;
 }
  
-.button-vermas{
-    width: 50%;
-    background-color:#495d43 ;
-    border-color: #495d43;
-    color: white;
 
+.accordion-button{
+    width: 100%;
+    background-color:#92b488 ;
+    border-color: #6d9262;
+    color: rgb(20, 17, 17);
     
 }
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 10px;
+    
+}
+
+.accordion{
+    --bs-accordion-bg: none;
+}
+
+.accordion-button {
+    color: var(--bs-accordion-active-color);
+    background-color: #92b488 ;
+   
+}
+
 
 .button-vermas:hover{
     background-color: #769b6a;

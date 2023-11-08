@@ -7,7 +7,7 @@ export const datosEmpleos: Empleos[] = [
             puesto: "PERSONAL TRAINING",
             cargaHoraria: 4,
             rubro: "Deporte",
-            requisitos: "Mayor de 21 de años, estudiante o profesor de educación fisica",
+            requisitos: "Mayor de 21 de años, estudiante o profesor de educación fisica.",
             descripcion: "El club San Martin  se encuentra en la búsqueda de profesor/ra para entrenamiento grupal de mañana y de tarde.",
         },
 
@@ -49,7 +49,7 @@ export const datosEmpleos: Empleos[] = [
             puesto: "MÉDICO",
             cargaHoraria: 8,
             rubro: "Medicina",
-            requisitos: "Matricula comprobable, habilidades comunicativas",
+            requisitos: "Matricula comprobable, habilidades comunicativas.",
             descripcion: "El hospital de Sierras Bayas se encuentra en la búsqueda de médicos/as para cubrir guardias de día y de noche. ",
         },
         {

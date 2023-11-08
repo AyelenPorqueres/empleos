@@ -23,6 +23,7 @@
     align-items: center;
     width: 50%;
     padding: .5rem;
+    text-align:justify;
 
     & p{
         font-size: 20px;
