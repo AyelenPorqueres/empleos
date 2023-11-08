@@ -1,0 +1,69 @@
+.titulo-ciudad{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    background-color:#EEEDDE ;
+    padding-top: 15px;
+    color:#495D43;
+    
+}
+
+.containerInfo{
+    display: flex;
+    flex-direction: row;
+    background-color: #EEEDDE;
+    color: #495D43;
+    padding: 2rem 2rem;
+    margin-top: -10px;
+}
+
+.divInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: .5rem;
+    text-align:justify;
+
+    & p{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+
+.divVideo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+} 
+
+.botonInfo{
+    background-color: #495D43;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    width: 25%;
+    transition: .3s;
+    box-shadow: 5px 5px 5px #74926b;
+    border-color: #74926b;
+    
+}
+
+.botonInfo:hover{
+    background-color: #769b6a;
+}
+
+.video {
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .botonInfo{
+        width: 80%;
+    }
+}

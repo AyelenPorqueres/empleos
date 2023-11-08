@@ -1,0 +1,50 @@
+.contacto {
+    background-color: #495d43;
+    margin-bottom: 2px;
+}
+
+.redes {
+    margin: 40px;
+    padding: 20px;
+    border-right: solid white 2px;
+    
+}
+
+.bi{
+    color: white;
+    font-size: 30px;
+    margin:10 px;
+}
+
+.formulario{
+    margin:30px;
+    color:white;
+    text-align: center;
+}
+
+.formulario input{
+    background-color: rgb(238, 231, 231);
+}
+
+.formulario textarea{
+    background-color: rgb(238, 231, 231);
+}
+
+h4 {
+    margin-bottom:30px;
+}
+
+.btn{
+    background-color: #BBDEB1;
+    border: #BBDEB1;
+    color: #495d43;
+    width: 150px;
+}
+
+.btn:hover {
+    background-color: #8ba384;
+}
+
+.mapa{
+    margin:30px;
+}

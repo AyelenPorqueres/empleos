@@ -1,7 +1,7 @@
 
 .menu{
     background-color:#495d43;
-    height: 70px;
+    height: 55px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@
     border-top-color: white;
     border-bottom-style: solid ;
     border-bottom-color: white;
+    margin-bottom: 20px;
  
 }
 
@@ -21,12 +22,9 @@
     /*margin-left: 500px ;*/
 }
 
-.menu .items li{
-    border-radius: 3px;
-    
-}
 
-.menu .items li a{
+
+.menu .items .links{
     padding: 7px 13px;
     text-decoration: none ;
     font-size: 18px;
@@ -35,3 +33,4 @@
     text-align: center;
     
 }
+
