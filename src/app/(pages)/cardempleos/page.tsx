@@ -5,6 +5,7 @@ import { CardContainer } from "../../componentes/cardContainer/cardContainer"
 import { datosEmpleos } from "../../services/datosEmpleos"
 import { FiltroEmpleos } from "@/app/componentes/filtroEmpleos/filtroEmpleos"
 export default function Home() {
+  
   return (
     <>
       <header>
