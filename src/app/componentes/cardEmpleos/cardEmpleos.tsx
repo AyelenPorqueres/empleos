@@ -18,9 +18,7 @@ export const CardEmpleos = (props: any) => {
                         <p className="card-text-title">{item.puesto}</p>
                         <p className='card-text-description'>{item.descripcion}</p>
                     </div>
-                    {/* <button className="btn button-vermas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                    VER MÁS
-                </button> */}
+                    
                     <Accordion flush>
                         <Accordion.Item eventKey="0" >
                             <Accordion.Header className='button-vermas'>VER MÁS</Accordion.Header>

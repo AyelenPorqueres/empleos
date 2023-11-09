@@ -1,8 +1,11 @@
 
 .fondologo{
     background-color:#495d43;
+    border-bottom-style: solid ;
+    border-bottom-color: white;
 }
 
 .logo{
     text-align: center;
+    
 }

@@ -60,6 +60,8 @@
     height: 20px;
     font-size: 13px;
     
+    
+    
 
 }
 .accordion-button:not(.collapsed) {
@@ -67,25 +69,28 @@
      background-color: #92b488 ; 
      box-shadow: #6d9262;
      border-radius: 2px;
+     
     
      
 }
 
 
 .accordion-body{
-    background-color: #92b488;
+    background-color: #eeedde;
     border-radius: 2px;
     margin-top: -10px;
 }
-.accordion-button::after{
-    background-image: none;
+.accordion-button:not(.collapsed)::after {
+    background-image: none; 
+    
 }
 .button-trabajo{
-    margin-left: 40px;
+    margin-left: 85px;
     background-color: #495d43;
     color: white;
     border-radius: 5px;
     border-color: #74926b;
+    
 }
 
 
