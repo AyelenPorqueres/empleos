@@ -2,15 +2,14 @@
     display: flex;
     justify-content: space-around;
     background-color: #495D43;
-    height: 60px;
+    height: 0 auto;
 
 
 }
 
 .fondoBuscadores {
     background-color: #778E70;
-    height: 0 auto;
-    width: 0 auto;
+    
 }
 
 .buscador {
@@ -23,12 +22,14 @@
 }
 
 .selector {
-    
+    padding: 5px 15px;
+    color: white;
     outline: 0;
     margin: 20px;
     border: 1.5px;
     border-collapse: collapse;
     border-radius: 5px;
+   
 
 }
 

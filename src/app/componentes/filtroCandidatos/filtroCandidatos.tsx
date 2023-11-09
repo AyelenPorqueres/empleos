@@ -17,7 +17,7 @@ export const FiltroCandidatos = () => {
 
                     <th>
                         <form action="search">
-                            <input id="letraBuscador" className="fondoBuscadores buscador" type="search" placeholder="Search" aria-label="Search" />
+                            <input id="letraBuscador" className="fondoBuscadores buscador" type="search" placeholder="Buscar" aria-label="Search" />
                             <img src="" alt="" />
                         </form>
                     </th>
