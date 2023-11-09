@@ -1,5 +1,5 @@
 import React from 'react'
-import './cargarCV.css'
+import './cargarCv.css'
 
 function CargarCv() {
   return (

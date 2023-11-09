@@ -11,7 +11,7 @@ export const CardCandidatos = (props: any) => {
       {datos.map((item: Candidatos) => (
         <div className="containerCandidatos">
           <div className="contenedorImg">
-            <img src={`imagenes/${item.id}.jpg`} className="imgCard" alt="ALFONSO JUAREZ" />
+            <img src={`/imagenes/imagenesCandidatos/${item.id}.jpg`} className="imgCard" alt="ALFONSO JUAREZ" />
           </div>
           <div className="infoPersonal">
             <p className="textNombre">{item.nombreCompleto}</p>

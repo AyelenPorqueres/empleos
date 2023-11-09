@@ -19,7 +19,7 @@ export default function Home() {
         <FiltroCandidatos></FiltroCandidatos>
       </header>
       <main>
-        <CargarCv />
+        <CargarCv></CargarCv>
         <CardContainer>
           <CardCandidatos datos={datosCandidatos}></CardCandidatos>
         </CardContainer>

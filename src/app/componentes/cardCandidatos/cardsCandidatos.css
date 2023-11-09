@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: .5rem; */
     background-color: #EEEDDE;
-    width: 18rem;
+    width: 22rem;
     text-align: center;
     border-radius: 5px;
     border: 1px solid #68865F;
@@ -19,7 +19,7 @@
         }
 
         .textEspecializacion{
-            font-size: 12px;
+            font-size: 15px;
             color: #41573A;
         }
     }
@@ -29,11 +29,12 @@
         padding: .5rem;
         border-top: 1px solid #68865F;
         border-bottom: 1px solid #68865F;
+        font-size: 15px;
     }
 
     .imgCard{
-        height: 12.5rem;
-        width: 12.5rem;
+        height: 180px;
+        width: 200PX;
         align-self: center;
         background-position: center;
         background-size: cover;
@@ -60,6 +61,7 @@ p{
         color: white;
         border-radius: 3px;
         transition: .5s;
+        
     }
 
     .buttonLinkedin:hover{

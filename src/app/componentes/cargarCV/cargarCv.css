@@ -1,6 +1,8 @@
 .containerCv{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    
 
     .btnCv{
         padding: .5rem 1.5rem;
