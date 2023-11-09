@@ -1,31 +1,30 @@
+'use client'
 import React from "react";
 import "./carrousel.css"
+import Carousel from 'react-bootstrap/Carousel';
+
+///Imagenes/ImagenInicio1.jpeg
 
 export function Carrousel() {
   return (
-    <div className="containerImagenes container-fluid">
-      <div id="carouselImagenes" className="carousel slide" data-bs-ride="true">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="/Imagenes/ImagenInicio1.jpeg" className="d-block w-100 img-carrousel" alt="..."></img>
-          </div>
-          <div className="carousel-item">
-            <img src="/imagenes/ImagenInicio2.jpeg" className="d-block w-100 img-carrousel" alt="..."></img>
-          </div>
-          <div className="carousel-item">
-            <img src="/Imagenes/ImagenInicio3.jpeg" className="d-block w-100 img-carrousel" alt="..."></img>
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="carouselImagenes" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="carouselImagenes" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
+    <Carousel className="containerImagenes container-fluid">
+      <Carousel.Item>
+        <img className="img-carrousel" src="Imagenes/Imagen1.png" alt="" />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="img-carrousel" src="Imagenes/Imagen2.png" alt="" />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img className="img-carrousel" src="Imagenes/Imagen3.png" alt="" />
+        <Carousel.Caption>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 

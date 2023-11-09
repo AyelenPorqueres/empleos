@@ -30,16 +30,73 @@
     text-align: center;
 }
  
-.button-vermas{
-    width: 50%;
-    background-color:#495d43 ;
-    border-color: #495d43;
-    color: white;
 
+.accordion-button{
+    width: 100%;
+    background-color:#92b488 ;
+    border-color: #6d9262;
+    color: rgb(20, 17, 17);
+    text-align: center;
     
 }
 
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 2px;
+    
+    
+}
+
+.accordion{
+    --bs-accordion-bg: none;
+    --bs-accordion-btn-focus-border-color: #92b488 ;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #92b488;
+    --bs-accordion-active-color:  #4f6a47;
+    --bs-accordion-active-bg: #92b488 ;
+}
+
+.accordion-button {
+    text-decoration-color: black;
+    background-color: #92b488 ;
+    height: 20px;
+    font-size: 13px;
+    
+    
+    
+
+}
+.accordion-button:not(.collapsed) {
+     color: black; 
+     background-color: #92b488 ; 
+     box-shadow: #6d9262;
+     border-radius: 2px;
+     
+    
+     
+}
+
+
+.accordion-body{
+    background-color: #eeedde;
+    border-radius: 2px;
+    margin-top: -10px;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none; 
+    
+}
+.button-trabajo{
+    margin-left: 85px;
+    background-color: #495d43;
+    color: white;
+    border-radius: 5px;
+    border-color: #74926b;
+    
+}
+
+
+
 .button-vermas:hover{
     background-color: #769b6a;
+   
 }
 

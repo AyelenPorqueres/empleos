@@ -2,23 +2,20 @@ import Link from 'next/link';
 import './nav.css'
 
 export const Nav = () => {
+    const goContacto = () => {
+
+    }
 
     return (
-
-
         <nav className="menu" >
             <ul className="items">
-            <Link 
-                className='links'
-                    
-                    href={
-                        {
-                            pathname: '/',
-                        }
-                    }
+                <Link 
+                    className='links'  
+                    href={{pathname: '/',}}
                 >
-                    INICIO
+                INICIO
                 </Link>
+
                 <Link 
                 className='links'
                     
@@ -53,13 +50,8 @@ export const Nav = () => {
                     TURISMO
                 </Link>
                 <Link 
-                className='links'
-                    
-                    href={
-                        {
-                            pathname: '/#linkcontacto',
-                        }
-                    }
+                    className='links'
+                    href='#linkcontacto' 
                 >
                     CONTACTO
                 </Link>
