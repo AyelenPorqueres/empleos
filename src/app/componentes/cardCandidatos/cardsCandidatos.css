@@ -8,6 +8,7 @@
     border-radius: 5px;
     border: 1px solid #68865F;
     text-transform: uppercase;
+    margin: 50px 10px;
 
     .infoPersonal{
         /* margin-top: 6rem; */
@@ -64,4 +65,8 @@ p{
     .buttonLinkedin:hover{
         transform: scale(1.1,1.1);
     }
+}
+
+.contenedorImg {
+    height: 7rem;
 }
