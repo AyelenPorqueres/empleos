@@ -23,12 +23,12 @@ export const CardEmpleos = (props: any) => {
                 </button> */}
                     <Accordion flush>
                         <Accordion.Item eventKey="0" >
-                            <Accordion.Header>VER MÁS</Accordion.Header>
-                            <Accordion.Body>
-                                <p className='card-text-description'> Rubro: {item.rubro}</p>
-                                <p className='card-text-description'> Requisitos: {item.requisitos}</p>
-                                <p className='card-text-description'> Carga horaria: {item.cargaHoraria}hs</p>
-                                <button>APLICAR AL TRABAJO</button>
+                            <Accordion.Header className='button-vermas'>VER MÁS</Accordion.Header>
+                            <Accordion.Body className='accordion-body'>
+                                <p className='card-text-description'> RUBRO: {item.rubro}</p>
+                                <p className='card-text-description'> REQUISITOS: {item.requisitos}</p>
+                                <p className='card-text-description'> CARGA HORARIA: {item.cargaHoraria}hs</p>
+                                <button className='button-trabajo'>APLICAR AL TRABAJO</button>
 
                             </Accordion.Body>
                         </Accordion.Item>
