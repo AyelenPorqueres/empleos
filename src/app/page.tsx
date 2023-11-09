@@ -5,7 +5,7 @@ import { Info } from "./componentes/infociudad/info"
 import { Footer } from "./componentes/footer/footer"
 import ServiciosComponent from "./componentes/serviciosHome/servicios";
 import { Contacto } from "./componentes/contacto/Contacto"
-import '/page.css'
+import './page.css'
 
 
 export default function Home() {
