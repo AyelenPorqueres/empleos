@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import './cardEmpleos.css'
 import Empleos from '@/app/model/Empleos';
 
@@ -9,6 +10,7 @@ export const CardEmpleos = (props:any) => {
     return (
         <>
         {datos.map((item:Empleos) => (
+            // eslint-disable-next-line react/jsx-key
             <div className="card d-flex flex-column align-items-center">
                 <img src={`imagenes/${item.puesto}.jpg`} className="card-img-top" alt={item.puesto} />
                 <div className="card-body">
