@@ -1,7 +1,5 @@
 .containerCandidatos{
-    /* display: flex;
-    flex-direction: column;
-    gap: .5rem; */
+  
     background-color: #EEEDDE;
     width: 22rem;
     text-align: center;
@@ -11,7 +9,7 @@
     margin: 50px 10px;
 
     .infoPersonal{
-        /* margin-top: 6rem; */
+        
         padding: 1rem;
 
         .textNombre{

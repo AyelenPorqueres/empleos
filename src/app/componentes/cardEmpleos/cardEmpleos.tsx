@@ -13,6 +13,7 @@ export const CardEmpleos = (props: any) => {
         <>
             {datos.map((item: Empleos) => (
                 <div className="card d-flex flex-column align-items-center">
+                    
                     <img src={`imagenes/imagenesEmpleos/${item.puesto}.jpg`} className="card-img-top" alt={item.puesto} />
                     <div className="card-body">
                         <p className="card-text-title">{item.puesto}</p>
