@@ -1,7 +1,8 @@
 import './filtroEmpleos.css'
 export const FiltroEmpleos = () => {
     return (
-        
+        <>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
             <div className="contenedor">
                 <table>
                     <tr>
@@ -15,12 +16,17 @@ export const FiltroEmpleos = () => {
 
                         <th>
                             <form action="search">
-                                <input id="letraBuscador" className="fondoBuscadores buscador" type="search" placeholder="Buscar" aria-label="Search" />
+                                <div className="buscar">
+                                    <input type="text" placeholder='buscar' required />
+                                    <div className='btn'>
+                                        <i className='fa fa-search'></i>
+                                    </div>
+                                </div>
                             </form>
                         </th>
                     </tr>
                 </table>
             </div >
-        
+        </>
     )
 }

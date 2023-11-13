@@ -8,6 +8,7 @@ import { Footer } from "@/app/componentes/footer/footer"
 import './page.css'
 
 export default function Home() {
+  
   return (
     <>
       <header>
