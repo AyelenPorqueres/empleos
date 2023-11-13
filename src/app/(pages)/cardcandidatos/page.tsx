@@ -1,16 +1,14 @@
 import { Logo } from "../../componentes/logo/logo"
 import { Nav } from "../../componentes/nav/nav"
-import { CardEmpleos } from "../../componentes/cardEmpleos/cardEmpleos"
+import { CardCandidatos } from "../../componentes/cardCandidatos/cardsCandidatos"
 import { CardContainer } from "../../componentes/cardContainer/cardContainer"
-import { datosEmpleos } from "../../services/datosEmpleos"
-import { FiltroEmpleos } from "@/app/componentes/filtroEmpleos/filtroEmpleos"
-<<<<<<< HEAD
-=======
+// import { datosEmpleos } from "../../services/datosEmpleos"
+import { datosCandidatos } from "@/app/services/datosCandidatos"
+import CargarCv from "@/app/componentes/cargarCV/cargarCv"
 import './page.css'
+import { FiltroCandidatos } from "@/app/componentes/filtroCandidatos/filtroCandidatos"
 
->>>>>>> develop
 export default function Home() {
-  
   return (
     <>
       <header>
@@ -18,12 +16,12 @@ export default function Home() {
           <Logo></Logo>
           <Nav></Nav>
         </div>
-
-        <FiltroEmpleos />
+        <FiltroCandidatos></FiltroCandidatos>
       </header>
       <main>
+        <CargarCv></CargarCv>
         <CardContainer>
-          <CardEmpleos datos={datosEmpleos}></CardEmpleos>
+          <CardCandidatos datos={datosCandidatos}></CardCandidatos>
         </CardContainer>
       </main>
     </>

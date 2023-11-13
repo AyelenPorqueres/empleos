@@ -32,7 +32,7 @@ export const Nav = () => {
                     
                     href={
                         {
-                            pathname: '/',
+                            pathname: '/cardcandidatos',
                         }
                     }
                 >

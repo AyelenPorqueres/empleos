@@ -16,12 +16,16 @@ export const FiltroEmpleos = () => {
 
                         <th>
                             <form action="search">
+<<<<<<< HEAD
                                 <div className="buscar">
                                     <input type="text" placeholder='buscar' required />
                                     <div className='btn'>
                                         <i className='fa fa-search'></i>
                                     </div>
                                 </div>
+=======
+                                <input id="letraBuscador" className="fondoBuscadores buscador" type="search" placeholder="Buscar" aria-label="Search" />
+>>>>>>> develop
                             </form>
                         </th>
                     </tr>

@@ -1,0 +1,72 @@
+.containerCandidatos{
+  
+    background-color: #EEEDDE;
+    width: 22rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #68865F;
+    text-transform: uppercase;
+    margin: 50px 10px;
+
+    .infoPersonal{
+        
+        padding: 1rem;
+
+        .textNombre{
+            font-weight: bold;
+        }
+
+        .textEspecializacion{
+            font-size: 15px;
+            color: #41573A;
+        }
+    }
+
+    .divHabilidades{
+        background-color: #C9DBC3;
+        padding: .5rem;
+        border-top: 1px solid #68865F;
+        border-bottom: 1px solid #68865F;
+        font-size: 15px;
+    }
+
+    .imgCard{
+        height: 180px;
+        width: 200PX;
+        align-self: center;
+        background-position: center;
+        background-size: cover;
+        transform: translateY(-5.5rem);
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+}
+
+p{
+    margin: 0;
+    line-height: 1.5;
+}
+
+.divHabilidadesExtras{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    .buttonLinkedin{
+        background-color: #495D43;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        transition: .5s;
+        
+    }
+
+    .buttonLinkedin:hover{
+        transform: scale(1.1,1.1);
+    }
+}
+
+.contenedorImg {
+    height: 7rem;
+}
