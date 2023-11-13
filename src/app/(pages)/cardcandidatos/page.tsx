@@ -7,6 +7,7 @@ import { datosCandidatos } from "@/app/services/datosCandidatos"
 import CargarCv from "@/app/componentes/cargarCV/cargarCv"
 import './page.css'
 import { FiltroCandidatos } from "@/app/componentes/filtroCandidatos/filtroCandidatos"
+import { Footer } from "@/app/componentes/footer/footer"
 
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
         <CardContainer>
           <CardCandidatos datos={datosCandidatos}></CardCandidatos>
         </CardContainer>
+
+        <Footer></Footer>
+
       </main>
     </>
   )
