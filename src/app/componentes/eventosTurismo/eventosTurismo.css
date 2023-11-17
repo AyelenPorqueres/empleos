@@ -1,0 +1,48 @@
+.titulo-eventos{
+    margin-top: 80px;
+    font-size:70px ;
+}
+.body-titulo-eventos{
+    border-bottom: 0.5px solid #495D43;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.img-eventos{
+    max-width: 320px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+   
+   
+    
+}
+
+.card-body-event{
+  
+    border-bottom: 0.5px solid #495D43;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+
+.card-text-title-event{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#688160;
+    margin: 20px;
+    
+}
+
+.card-text-description-event{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+  
+}
+
+.body-event{
+    margin-bottom: 20px;
+}

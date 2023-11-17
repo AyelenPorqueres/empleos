@@ -43,7 +43,7 @@ export const Nav = () => {
                     
                     href={
                         {
-                            pathname: '/',
+                            pathname: '/cardturismo',
                         }
                     }
                 >
