@@ -1,10 +1,9 @@
 .contenedor {
-    display: flex;
-    justify-content: space-around;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;*/
     background-color: #495D43;
     height: 0 auto;
-
-
 }
 
 .fondoBuscadores {
@@ -39,15 +38,6 @@
 select option {
     color: black;
     background-color: #EEEDDE;
-}
-
-.contenedor {
-    display: flex;
-    justify-content: space-around;
-    background-color: #495D43;
-    height: 70px;
-
-
 }
 
 .buscador {
