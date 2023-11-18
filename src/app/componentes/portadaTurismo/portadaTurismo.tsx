@@ -1,11 +1,6 @@
 'use client'
 import React from "react";
-
 import './portadaTurismo.css'
-
-
-
-
 
 export function PortadaTurismo() {
   return (
@@ -14,7 +9,7 @@ export function PortadaTurismo() {
         <img src="imagenes/imagenesTurismo/portadaTurismo.jpg" className="img-fluid img-portada" alt="..."></img>
       </div>
       <div>
-        <p>Conoce Sierras Bayas</p>
+        <p className="titulo-portada-turismo">Conoce Sierras Bayas</p>
       </div>
     </>
 
