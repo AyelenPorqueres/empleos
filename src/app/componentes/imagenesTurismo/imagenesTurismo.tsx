@@ -1,9 +1,9 @@
 'use client'
 import Figure from 'react-bootstrap/Figure';
-import './imagenesTurismo.css'
 import ImagenesTurismo from '@/app/model/ImagenesTurismo';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
+import './imagenesTurismo.css'
 
 export const ImagenesTurismo = (props: any) => {
     const { datos }: { datos: ImagenesTurismo[] } = props;
