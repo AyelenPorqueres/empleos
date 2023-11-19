@@ -3,7 +3,6 @@ import Figure from 'react-bootstrap/Figure';
 import ImagenesTurismo from '@/app/model/ImagenesTurismo';
 import Modal from 'react-bootstrap/Modal';
 import { useEffect, useState } from 'react';
-import { useState } from 'react';
 import './imagenesTurismo.css'
 
 export const ImagenesTurismo = (props: any) => {
@@ -29,8 +28,8 @@ export const ImagenesTurismo = (props: any) => {
     return (
         <>
             {misDatos.map((item: ImagenesTurismo) => (
-                <Figure>
-                    <Figure.Image width={250} height={250} src={`imagenes/imagenesTurismo/${item.titulo}.jpg`} alt={item.titulo}
+                <Figure className='figure-turismo'>
+                    <Figure.Image className='figure-img-turismo' width={250} height={250} src={`imagenes/imagenesTurismo/${item.titulo}.jpg`} alt={item.titulo}
                     />
 
                     <div className='text-img-turismo'>
@@ -46,13 +45,18 @@ export const ImagenesTurismo = (props: any) => {
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="contained-modal-title-vcenter">
-
+                                <p>
+                                    {item.subtitulo}
+                                </p>
                                 </Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
                                 <p>
                                     {item.descripcion}
                                 </p>
+                                <div>
+                                   
+                                </div>
                             </Modal.Body>
                         </Modal>
                     </div>

@@ -2,15 +2,13 @@
 
 
 
-figure{
-    margin: 5px;
+.figure-turismo{
+    margin-left: 50px;
+    margin-right: 50px;
     align-items: center;
     border: 0.5px solid #68865F;
 }
 
-Figure.Image{
-    margin: 20px;
-}
 .figure-img{
     margin-bottom: 0px;
     line-height: 1;

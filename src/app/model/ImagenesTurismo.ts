@@ -1,6 +1,8 @@
 export default interface ImagenesTurismo {
     id: number,
-    titulo: string;
+    titulo: string,
+    subtitulo: string,
     descripcion: string,
-    mostrarInfo: boolean
+    mostrarInfo: boolean,
+
   };
