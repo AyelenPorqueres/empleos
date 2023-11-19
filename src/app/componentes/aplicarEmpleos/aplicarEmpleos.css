@@ -1,0 +1,36 @@
+.fade{
+   background-color: #a9aba921 ;
+}
+
+.modal-content{
+    border: none;
+}
+
+.modal{
+    --bs-modal-margin: 6rem;
+}
+
+.botonAceptar{
+    background-color: #6d9262;
+    --bs-btn-border-color: #6d9262;
+    --bs-btn-hover-border-color: #6d9262;
+    --bs-btn-hover-bg: #6d9262;
+    transition: 0.3s;
+}
+
+.botonAceptar:hover{
+    box-shadow: 2px 2px 8px black;
+}
+
+
+.botonCancelar{
+    transition: 0.3s;
+}
+
+.botonCancelar:hover{
+    box-shadow: 2px 2px 8px black;
+}
+
+element.style{
+    display: none;
+}
