@@ -5,6 +5,7 @@ export default interface Empleos {
     rubro: string,
     requisitos: string,
     descripcion: string,
+    mostrarModal: boolean,
   };
 
 
