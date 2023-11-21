@@ -6,3 +6,10 @@ export default interface Empleos {
     requisitos: string,
     descripcion: string,
   };
+
+
+  export const postulantes: any[] = []; 
+
+  export const agregarPostulante = (postulante: any) => {
+    postulantes.push(postulante);
+  };

@@ -4,6 +4,7 @@ import { CardEmpleos } from "../../componentes/cardEmpleos/cardEmpleos"
 import { CardContainer } from "../../componentes/cardContainer/cardContainer"
 import { datosEmpleos } from "../../services/datosEmpleos"
 import { FiltroEmpleos } from "@/app/componentes/filtroEmpleos/filtroEmpleos"
+import { Footer } from "@/app/componentes/footer/footer"
 import './page.css'
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
         <CardContainer>
           <CardEmpleos datos={datosEmpleos}></CardEmpleos>
         </CardContainer>
+
+
+        <Footer></Footer>
       </main>
     </>
   )

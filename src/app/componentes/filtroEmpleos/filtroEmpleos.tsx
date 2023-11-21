@@ -26,8 +26,8 @@ export const FiltroEmpleos = (props: any) => {
                         <th>
                             <form action="search">
                                 <div className="buscar">
-                                    <input id='letraBuscador' type="text" placeholder='buscar' required />
-                                    <div className='btn'>
+                                    <input type="text" placeholder='buscar' required />
+                                    <div className='btn btn-filtro'>
                                         <i onClick={() => buscar()} className='fa fa-search'></i>
                                     </div>
                                 </div>
