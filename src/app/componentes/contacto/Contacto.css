@@ -34,14 +34,14 @@ h4 {
     margin-bottom:30px;
 }
 
-.btn{
+.btn-contacto{
     background-color: #BBDEB1;
     border: #BBDEB1;
     color: #495d43;
     width: 150px;
 }
 
-.btn:hover {
+.btn-contacto:hover {
     background-color: #8ba384;
 }
 
