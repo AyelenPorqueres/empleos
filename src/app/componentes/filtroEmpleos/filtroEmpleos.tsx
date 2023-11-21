@@ -1,5 +1,14 @@
 import './filtroEmpleos.css'
-export const FiltroEmpleos = () => {
+import { datosEmpleos } from '@/app/services/datosEmpleos'
+export const FiltroEmpleos = (props: any) => {
+
+    const cargaHoraria = [(datosEmpleos.filter(articulo => articulo.cargaHoraria))];
+    const rubro = [(datosEmpleos.filter(articulo => articulo.rubro))];
+    const puesto = [(datosEmpleos.filter(articulo => articulo.puesto))];
+
+    const { buscar }: { buscar: Function } = props;
+
+
     return (
         <>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
@@ -8,18 +17,18 @@ export const FiltroEmpleos = () => {
                     <tr>
                         <label className="">
                             <select className="fondoBuscadores selector" name="" id="">
-                                <option value="">Carga Horaria</option>
-                                <option value="">Rubro</option>
-                                <option value="">Puesto</option>
+                                <option value="cargaHoraria">Carga Horaria</option>
+                                <option value="rubro">Rubro</option>
+                                <option value="puesto">Puesto</option>
                             </select>
                         </label>
 
                         <th>
                             <form action="search">
                                 <div className="buscar">
-                                    <input type="text" placeholder='buscar' required />
+                                    <input id='letraBuscador' type="text" placeholder='buscar' required />
                                     <div className='btn'>
-                                        <i className='fa fa-search'></i>
+                                        <i onClick={() => buscar()} className='fa fa-search'></i>
                                     </div>
                                 </div>
                             </form>

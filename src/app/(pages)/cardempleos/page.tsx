@@ -8,6 +8,9 @@ import './page.css'
 
 export default function Home() {
   
+  const buscar = () => {
+    
+  }
   return (
     <>
       <header>
@@ -16,7 +19,7 @@ export default function Home() {
           <Nav></Nav>
         </div>
 
-        <FiltroEmpleos />
+        <FiltroEmpleos buscar={buscar}/>
       </header>
       <main>
         <CardContainer>

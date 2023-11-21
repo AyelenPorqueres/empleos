@@ -1,6 +1,11 @@
 import './filtroCandidatos.css'
+import { useState } from 'react'
+
+
 export const FiltroCandidatos = () => {
     return (
+        <>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
         <div className="contenedor">
             <table>
                 <tr>
@@ -18,7 +23,7 @@ export const FiltroCandidatos = () => {
                     <th>
                         <form action="search">
                             <div className="buscar">
-                                <input type="text" placeholder='buscar' required />
+                                <input id='letraBuscador' type="text" placeholder='buscar' required />
                                 <div className='btn'>
                                     <i className='fa fa-search'></i>
                                 </div>
@@ -28,5 +33,6 @@ export const FiltroCandidatos = () => {
                 </tr>
             </table>
         </div >
+        </>
     )
 }

@@ -1,78 +1,74 @@
 .contenedor {
-	display: flex;
-	justify-content: space-around;
-	background-color: #495D43;
-	height: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #495D43;
+    height: 70px;
 
 
-}
-
-.fondoBuscadores {
-	background-color: #778E70;
 }
 
 .buscador {
-	padding: 5px;
-	color: white;
-	outline: 0;
-	border: 1.5px;
-	border-radius: 5px;
-	border-collapse: collapse;
-	text-align: center;
+    color: white;
+    outline: 0;
 }
 
 .selector {
-	padding: 5px 15px;
-	color: white;
-	outline: 0;
-	margin: 20px;
-	border: 1.5px;
-	border-collapse: collapse;
-	border-radius: 5px;
+    outline: 0;
+    margin: 20px;
+    border: 1.5px;
+    border-collapse: collapse;
+    border-radius: 5px;
 }
 
+
 #letraBuscador::placeholder {
-	color: white;
+    color: white;
 }
 
 select option {
-	background-color: #EEEDDE;
-	color: black;
+    color: black;
+    background-color: #EEEDDE;
 }
+
+/* prueba --------------------------------- */
+
+
+
 
 .contenedor {
-	display: flex;
-	justify-content: space-around;
-	background-color: #495D43;
-	height: 70px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #495D43;
+    height: 70px;
 
 
 }
 
 .buscador {
-	color: white;
-	outline: 0;
+    color: white;
+    outline: 0;
 }
 
 .selector {
-	outline: 0;
-	margin: 20px;
-	border: 1.5px;
-	border-collapse: collapse;
-	border-radius: 5px;
+    height: 25px;
+    background-color: #EEEDDE;
+    outline: 0;
+    margin: 20px;
+    border: 1.5px;
+    border-collapse: collapse;
+    border-radius: 5px;
 }
 
 
 #letraBuscador::placeholder {
-	color: white;
+    color: black;
 }
 
 select option {
-	color: black;
-	background-color: #EEEDDE;
+    color: black;
+    background-color: #EEEDDE;
 }
 
-/*boton de busqueda*/
 
 .buscar {
 	padding: 5px;
@@ -106,8 +102,8 @@ select option {
 	border-radius: 50%;
 	cursor: pointer;
 }
-
-.buscar:hover input {
+.buscar:hover input{
+    background-color: #EEEDDE;
 	width: 240px;
 }
 
