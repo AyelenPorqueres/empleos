@@ -92,7 +92,7 @@ export const Contacto = () => {
                             </div>
                         </div>
                         <div className="col-12">
-                            <button className="btn btn-primary" type="submit" id="btn-registrarse">Enviar</button>
+                            <button className="btn btn-primary btn-contacto" type="submit" id="btn-registrarse">Enviar</button>
                         </div>
                         {isFormulariovalido && (
                             <div className="alert alert-success" role="alert">

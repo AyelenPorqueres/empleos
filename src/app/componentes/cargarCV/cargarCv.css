@@ -4,14 +4,39 @@
     margin-top: 20px;
 }
 
+.modal-content {
+    background-color: lightgray;
+}
+
+.cuerpo-modal{
+    margin:2px;
+    padding-top: 2px;
+}
+
+.titulo-modal-cv{
+    color: #495d43;
+}
+
+.label-cv {
+    margin-top: 15px;
+    color: #495d43;
+}
+
+.select-cv{
+    margin-top: 15px;
+    width: 17%;
+}
+
+.texto-validaciones{
+    color:brown;
+}
+
 .btnCv{
+    margin-top: 15px;
     padding: .5rem 1.5rem;
     background-color: #778E70;
     color: white;
     border-radius: 5px;
     border: none;
-}
-
-.modal-content {
-    background-color: lightgray;
+    float: right;
 }

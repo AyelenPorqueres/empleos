@@ -18,7 +18,7 @@ export const FiltroEmpleos = () => {
                             <form action="search">
                                 <div className="buscar">
                                     <input type="text" placeholder='buscar' required />
-                                    <div className='btn'>
+                                    <div className='btn btn-filtro'>
                                         <i className='fa fa-search'></i>
                                     </div>
                                 </div>

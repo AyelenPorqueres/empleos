@@ -82,7 +82,7 @@ select option {
     transition: all 0.6s ease;
 }
 
-.btn {
+.btn-filtro {
     position: absolute;
     width: 55px;
     height: 50px;
