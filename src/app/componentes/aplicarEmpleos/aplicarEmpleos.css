@@ -38,7 +38,8 @@
 
 .botonCancelar{
     transition: 0.3s;
-    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .botonCancelar:hover{
