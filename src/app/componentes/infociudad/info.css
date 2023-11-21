@@ -40,21 +40,7 @@
     padding: .5rem;
 } 
 
-.botonInfo{
-    background-color: #495D43;
-    color: white;
-    padding: 8px;
-    border-radius: 10px;
-    width: 25%;
-    transition: .3s;
-    box-shadow: 5px 5px 5px #74926b;
-    border-color: #74926b;
-    
-}
 
-.botonInfo:hover{
-    background-color: #769b6a;
-}
 
 .video {
     border-radius: 10px;
