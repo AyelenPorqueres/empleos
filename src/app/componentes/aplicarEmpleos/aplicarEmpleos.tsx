@@ -17,11 +17,16 @@ export function AplicarEmpleos(props: any) {
     numeroContacto: '',
   });
   
+  const mostrarAlerta = () => {
+    alert("Su solicitud ha sido enviada, nos pondremos en contacto contigo. Muchas Gracias");
+  }
+
   const aplicarEmpleo = () => {
     agregarPostulante(userInfo);
     // Mostrar por consola los datos del usuario
     console.log('Datos del usuario:', userInfo);
     closeModal();
+    mostrarAlerta();
   }
 
   //cerrar modal
