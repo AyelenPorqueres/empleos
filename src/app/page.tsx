@@ -6,6 +6,7 @@ import { Footer } from "./componentes/footer/footer"
 import ServiciosComponent from "./componentes/serviciosHome/servicios";
 import { Contacto } from "./componentes/contacto/Contacto"
 import './page.css'
+import NumerosDeEmergencia from "./componentes/numerosEmergencia/numerosEmergencia"
 
 
 export default function Home() {
@@ -24,7 +25,9 @@ export default function Home() {
         <Carrousel />
         <Info></Info>
         <ServiciosComponent />
+        <NumerosDeEmergencia></NumerosDeEmergencia>
         <Contacto></Contacto>
+       
       </main>
 
       <Footer></Footer>

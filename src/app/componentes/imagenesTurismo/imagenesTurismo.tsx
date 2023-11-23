@@ -45,18 +45,41 @@ export const ImagenesTurismo = (props: any) => {
                         >
                             <Modal.Header closeButton>
                                 <Modal.Title id="contained-modal-title-vcenter">
-                                <p>
-                                    {item.subtitulo}
-                                </p>
+                                    <p className='subtitulo-modal-turismo'>
+                                        {item.subtitulo}
+                                    </p>
                                 </Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
-                                <p>
-                                    {item.descripcion}
-                                </p>
-                                <div>
-                                   
+
+                                <div className='d-flex flex-row div-modal-turismo'>
+                                    <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenUno}`} />
+                                    <p className='p-modal-turismo'>
+                                        {item.descripcion}
+                                    </p>
                                 </div>
+
+                                <div className='d-flex flex-row div-modal-turismo' >
+                                    <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenDos}`} />
+                                    <p className='p-modal-turismo'>
+                                        {item.descripcionDos}
+                                    </p>
+                                </div>
+
+                                <div className='d-flex flex-row div-modal-turismo' >
+                                    <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenTres}`} />
+                                    <p className='p-modal-turismo'>
+                                        {item.descripcionTres}
+                                    </p>
+                                </div>
+
+                                <div className='d-flex flex-row div-modal-turismo' >
+                                    <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenCuatro}`} />
+                                    <p className='p-modal-turismo'>
+                                        {item.descripcionCuatro}
+                                    </p>
+                                </div>
+                                
                             </Modal.Body>
                         </Modal>
                     </div>

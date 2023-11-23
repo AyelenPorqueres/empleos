@@ -4,7 +4,7 @@ export const Info = () => {
     return (
         <>
             
-            <h2 className='titulo-ciudad'> NUESTRA CIUDAD </h2>
+            <h2 className='titulo-ciudad'> SIERRAS BAYAS, UN PUEBLO MINERO.</h2>
             
             <div className="containerInfo">
                 
