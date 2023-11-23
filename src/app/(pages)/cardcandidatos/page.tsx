@@ -10,6 +10,7 @@ import { Footer } from "@/app/componentes/footer/footer"
 import Candidatos from "@/app/model/Candidatos"
 import './page.css'
 import { useState } from "react"
+import { ToastContainer, toast } from "react-toastify"
 
 export default function Home() {
   
@@ -24,6 +25,14 @@ export default function Home() {
     console.log(newCandidato)
     const newDatos = [newCandidato, ...datos];
     setDatos(newDatos);
+    toast.success("Su curriculum se cargo correctamente! Muchas gracias.")/*, {position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",});*/
   }
 
   return (
@@ -41,6 +50,7 @@ export default function Home() {
           <CardCandidatos datos={datos} key= {datos.keys()}></CardCandidatos>
         </CardContainer>
         <Footer></Footer>
+        <ToastContainer />
       </main>
     </>
   )
