@@ -1,48 +1,9 @@
 .contenedor {
-    /*display: flex;
-    flex-direction: row;
-    justify-content: center;*/
-    background-color: #495D43;
-    height: 70px;
-
-
-}
-
-.buscador {
-    color: white;
-    outline: 0;
-}
-
-.selector {
-    outline: 0;
-    margin: 20px;
-    border: 1.5px;
-    border-collapse: collapse;
-    border-radius: 5px;
-}
-
-
-#letraBuscador::placeholder {
-    color: white;
-}
-
-select option {
-    color: black;
-    background-color: #EEEDDE;
-}
-
-/* prueba --------------------------------- */
-
-
-
-
-.contenedor {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #495D43;
     height: 70px;
-
-
+    text-align: center;
 }
 
 .buscador {
@@ -72,28 +33,28 @@ select option {
 
 
 .buscar {
-	padding: 5px;
-	position: relative;
-	padding: 10px
+    padding: 5px;
+    position: relative;
+    padding: 10px
 }
 
-.buscar input {
-	width: 0;
-	height: 30px;
-	padding: 0px 20px;
-	font-size: 18px;
-	color: black;
-	outline: none;
-	border: 0px solid;
-	border-radius: 20px;
-	transition: all 0.6s ease;
+.aver {
+    width: 0;
+    height: 30px;
+    padding: 0px 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 0px solid;
+    border-radius: 20px;
+    transition: all 0.6s ease;
 }
 
-.btn-filtro {
+.botonEnviarSubmit {
     position: absolute;
-    width: 55px;
+    width: 52px;
     height: 50px;
-    line-height: 35px;
+    line-height: 48px;
     top: 0;
     right: 0;
     background-color: #6c965f;
@@ -103,11 +64,27 @@ select option {
     border-radius: 50%;
     cursor: pointer;
 }
-.buscar:hover input{
+
+.botonFiltro {
+    position: absolute;
+    width: 52px;
+    height: 50px;
+    line-height: 48px;
+    top: 0;
+    right: 0;
+    background-color: #6c965f;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buscar:hover input:not(#submitNo) {
     background-color: #EEEDDE;
-	width: 240px;
+    width: 240px;
 }
 
 .buscar input:focus {
-	width: 240px;
+    width: 240px;
 }

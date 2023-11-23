@@ -1,31 +1,67 @@
 import './filtroCandidatos.css'
-import { useState } from 'react'
+import { SubmitHandler, useForm } from "react-hook-form";
 
 
-export const FiltroCandidatos = () => {
+export const FiltroCandidatos = (props: any) => {
+    interface FiltroCandidatos {
+        option: string,
+        value: string,
+
+    }
+    const { register, handleSubmit, reset } = useForm<FiltroCandidatos>();
+    const { buscar }: { buscar: Function } = props;
+    const onSubmit: SubmitHandler<FiltroCandidatos> = (datos) => {
+        buscar(datos);
+        //validaciones
+        reset();
+    };
+
+
+
+
     return (
         <>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
-        <div className="contenedor d-flex flex-row justify-content-center align-items-center">
-            <label>
-                <select className="fondoBuscadores selector" name="" id="">
-                    <option >Nombre/Apellido</option>
-                    <option >Edad</option>
-                    <option >Full-Time</option>
-                    <option >Movilidad</option>
-                </select>
-            </label>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
+            
+                <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" onSubmit={handleSubmit(onSubmit)}>
+                    <label>
+                        <select className="fondoBuscadores selector" {...register("option")}>
+                            <option value="nombreApellido">Nombre/Apellido</option>
+                            <option value="edad">Edad</option>
+                            <option value="fullTime">Full-Time</option>
+                            <option value="movilidad">Movilidad</option>
+                        </select>
+                    </label>
 
-            <form action="search">
-                <div className="buscar">
-                    <input type="text" placeholder='buscar' required />
-                    <div className='btn btn-filtro'>
-                        <i className='fa fa-search'></i>
-                    </div>
+                    <div className="buscar">
+                        
+                        <input  id='letraBuscador' className='aver'  type="text" placeholder='buscar' {...register("value")} />
+                        <input id='submitNo' className='botonEnviarSubmit' type="submit" />
+                        <div className='botonFiltro'>
+                        <i className='fa fa-search' onClick={() => buscar()}  ></i>
+                        </div> 
+
                 </div>
-            </form>
+                </form>
 
-        </div >
+            
         </>
     )
 }
+
+
+/*  
+
+<div className="buscar">
+                        <input id='letraBuscador' type="text" placeholder='buscar' {...register("value")} />
+
+                        <div className='btn-Filtro'>
+                            <i  className='fa fa-search' onClick={() => buscar()}></i>
+                            <input type="submit" className='' />
+
+                        </div>
+
+
+                    </div>
+
+*/
