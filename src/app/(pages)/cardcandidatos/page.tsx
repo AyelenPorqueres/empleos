@@ -36,7 +36,6 @@ export default function Home() {
     theme: "light",});*/
   }
 
-  //
   const buscar = (datosFiltro: any) => {
     let newCandidatos: Candidatos[] = [];
     if (datosFiltro.option == "nombreApellido") {
