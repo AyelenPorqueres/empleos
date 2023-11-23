@@ -31,7 +31,6 @@ export default function Home() {
           <Logo></Logo>
           <Nav></Nav>
         </div>
-//
         <FiltroEmpleos buscar={(datos: any) => buscar(datos)} />
       </header>
       <main>
