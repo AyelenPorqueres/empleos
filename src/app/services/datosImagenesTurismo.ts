@@ -9,7 +9,7 @@ export const datosImagenesTurismo: ImagenesTurismo[] = [
         descripcion: "Monte de los fresnos: Es un pulmon verde de 22 hectáreas, su nombre responde a una de las especies que lo habitan. Su función como pulmón verde lo hace vital para la localidad serrana, transformandose en una zona de paseo, recreación y descanso para contemplar naturaleza.",
         imagenUno: "monte-delosfresnos.jpg",
 
-        descripcionDos: "Cerro largo: Abarca una fracción de aproximadamente 60 hectáreas y forma parte del Sistema Serrano de Tandilia. Desde lo paisajístico, el predio es atravesado en todo su desarrollo por una abrupta barda rocosa que le otorga un especial atractivo dado que permite una amplia vista panorámica del entorno, motivo por el cual fue tradicionalmente utilizado como lugar de visitas.",
+        descripcionDos: "Cerro largo: Abarca una fracción de aproximadamente 60 hectáreas y forma parte del Sistema Serrano de Tandilia. Desde lo paisajístico, el predio es atravesado en todo su desarrollo por una abrupta barda rocosa que le otorga un especial atractivo dado que permite una amplia vista panorámica del entorno, motivo por el cual es tradicionalmente utilizado como lugar de visitas.",
         imagenDos: "cerro-largo.jpg",
         descripcionTres: "Monumento al trabajador: Se encuentra en la sierra principal de Sierras Bayas, en la misma se puede ir a caminar, sentarse a disfrutar de las vistas panorámicas de la ciudad y en la entrada tiene un sector de mesas para poder comer. El acceso es subiendo la loma, la cual se utiliza cada año para la bajada de los reyes magos.",
         imagenTres: "monumento-trabajador.jpg",
