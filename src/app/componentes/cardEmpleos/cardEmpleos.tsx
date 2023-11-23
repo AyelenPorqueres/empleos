@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './cardEmpleos.css';
 import Empleos from '@/app/model/Empleos';
 import Accordion from 'react-bootstrap/Accordion';
@@ -8,6 +8,10 @@ import { AplicarEmpleos } from '../aplicarEmpleos/aplicarEmpleos';
 export const CardEmpleos = (props: any) => {
   const { datos }: { datos: Empleos[] } = props;
   const [misDatos, setMisDatos] = useState<Empleos[]>(datos);
+
+  useEffect(() => {
+    setMisDatos(datos)
+  }, [datos]);
 
   const mostrarModal = (id: number) => {
     const newDatos: Empleos[] = misDatos.map((item) => ({

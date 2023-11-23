@@ -33,14 +33,11 @@ export const FiltroEmpleos = (props: any) => {
 
 
                 
-                    <div className="buscar">
-                        
+                    <div className="buscar">    
                             <input  id='letraBuscador' className='aver'  type="text" placeholder='buscar' {...register("value")} />
-                            <input id='submitNo' className='botonEnviarSubmit' type="submit" />
-                            <div className='botonFiltro'>
-                            <i className='fa fa-search' onClick={() => buscar()}  ></i>
-                            </div> 
-
+                            <button id='submitNo' className='botonEnviarSubmit' type="submit" >
+                                <i className='fa fa-search' ></i>
+                            </button> 
                     </div>
                 </form>
 

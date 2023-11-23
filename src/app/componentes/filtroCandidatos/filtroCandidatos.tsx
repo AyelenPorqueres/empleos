@@ -16,9 +16,6 @@ export const FiltroCandidatos = (props: any) => {
         reset();
     };
 
-
-
-
     return (
         <>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
@@ -36,10 +33,9 @@ export const FiltroCandidatos = (props: any) => {
                     <div className="buscar">
                         
                         <input  id='letraBuscador' className='aver'  type="text" placeholder='buscar' {...register("value")} />
-                        <input id='submitNo' className='botonEnviarSubmit' type="submit" />
-                        <div className='botonFiltro'>
-                        <i className='fa fa-search' onClick={() => buscar()}  ></i>
-                        </div> 
+                        <button id='submitNo' className='botonEnviarSubmit' type="submit" >
+                                <i className='fa fa-search' ></i>
+                        </button> 
 
                 </div>
                 </form>
