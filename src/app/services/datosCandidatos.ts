@@ -1,8 +1,8 @@
 import Candidatos from "../model/Candidatos"
 
-export const datosCandidatos: Candidatos[] = [
+export let datosCandidatos: Candidatos[] = [
     {
-    id: "ALFONSOJUAREZ",
+    id: 1,
     nombreCompleto: "ALFONSO JUAREZ",
     especializacionLaboral: "ANALISTA EN SISTEMA",
     edad: 30,
@@ -10,11 +10,13 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "MANEJO DE OFFICE COMPLETO",
     habilidadTres: "INGLÉS AVANZADO",
     habilidadCuatro: "HABILIDAD DE NEGOCIACION",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: SI"
+    infoExtraUno: "SI",
+    infoExtraDos: "SI",
+    linkedin: "",
+    imagen:"/imagenes/imagenesCandidatos/ALFONSOJUAREZ.jpg"
 },
 {
-    id: "ELENARODRIGUEZ",
+    id: 2,
     nombreCompleto: "ELENA RODRIGUEZ",
     especializacionLaboral: "TRABAJADORA SOCIAL",
     edad: 27,
@@ -22,11 +24,13 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "RESPONSABILIDAD",
     habilidadTres: "CAPACIDAD DE PROYECTAR",
     habilidadCuatro: "INGLÉS INTERMEDIO",
-    infoExtraUno: "HORARIO FULL TIME: NO",
-    infoExtraDos: "MOVILIDAD PROPIA: SI"
+    infoExtraUno: "NO",
+    infoExtraDos: "SI",
+    linkedin: "",
+    imagen:"/imagenes/imagenesCandidatos/ELENARODRIGUEZ.jpg"
 },
 {
-    id: "LUCASPEREZ",
+    id: 3,
     nombreCompleto: "LUCAS PEREZ",
     especializacionLaboral: "PROFESOR DE EDUCACIÓN FÍSICA",
     edad: 41,
@@ -34,11 +38,14 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "FRANCES E INGLÉS INTERMEDIO",
     habilidadTres: "CLASES GRUPALES Y PARTICULARES",
     habilidadCuatro: "INNOVACÓN",
-    infoExtraUno: "HORARIO FULL TIME: NO",
-    infoExtraDos: "MOVILIDAD PROPIA: SI",
+    infoExtraUno: "NO",
+    infoExtraDos: "SI",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/LUCASPEREZ.jpg",
+
 },
 {
-    id: "TAMARABENITEZ",
+    id: 4,
     nombreCompleto: "TAMARA BENITEZ",
     especializacionLaboral: "PROFESORA DE EDUCACIÓN INICIAL",
     edad: 33,
@@ -46,11 +53,13 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "CAPACIDAD DE OBSERVACIÓN",
     habilidadTres: "RESPONSABILIDAD",
     habilidadCuatro: "ELABORACIÓN DE MATERIALES DIDÁCTICOS",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: NO",
+    infoExtraUno: "SI",
+    infoExtraDos: "NO",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/TAMARABENITEZ.jpg",
 },
 {
-    id: "FATIMACHAVEZ",
+    id: 5,
     nombreCompleto: "FÁTIMA CHAVEZ",
     especializacionLaboral: "ODONTÓLOGA",
     edad: 45,
@@ -58,11 +67,13 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "HONESTIDAD E INTEGRIDAD",
     habilidadTres: "CAPACIDAD ORGANIZATIVA",
     habilidadCuatro: "TECNOLOGÍA AVANZADA",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: SI"
+    infoExtraUno: "SI",
+    infoExtraDos: "SI",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/FATIMACHAVEZ.jpg",
 },
 {
-    id: "RODRIGOGOMEZ",
+    id: 6,
     nombreCompleto: "RODRIGO GÓMEZ",
     especializacionLaboral: "CHEF PROFESIONAL",
     edad: 52,
@@ -70,11 +81,14 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "SEGURIDAD E HIGIENE ALIMENTARIA",
     habilidadTres: "PRESICIÓN Y RESPONSABILIDAD",
     habilidadCuatro: "ITALIANO E INGLÉS AVANZADO",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: SI"
+    infoExtraUno: "SI",
+    infoExtraDos: "SI",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/RODRIGOGOMEZ.jpg",
+
 },
 {
-    id: "LIONELMARTINEZ",
+    id: 7,
     nombreCompleto: "LIONEL MARTINEZ",
     especializacionLaboral: "LIC. EN ADMINISTRACIÓN DE EMPRESAS",
     edad: 34,
@@ -82,11 +96,14 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "INGLÉS AVANZADO",
     habilidadTres: "CAPACIDAD PARA TRABAJAR EN EQUIPO",
     habilidadCuatro: "SERVICIOS DE ATENCIÓN AL CLIENTE",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: NO"
+    infoExtraUno: "SI",
+    infoExtraDos: "NO",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/LIONELMARTINEZ.jpg",
+
 },
 {
-    id: "ALVARODIAZ",
+    id: 8,
     nombreCompleto: "ÁLVARO DÍAZ",
     especializacionLaboral: "FOTÓGRAFO PROFESIONAL Y FILMMAKER",
     edad: 18,
@@ -94,11 +111,13 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "BUEN MANEJO DE ADOBE",
     habilidadTres: "HABILIDAD COMUNICATIVA",
     habilidadCuatro: "INGLÉS INTERMEDIO",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: NO"
+    infoExtraUno: "SI",
+    infoExtraDos: "NO",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/ALVARODIAZ.jpg",
 },
 {
-    id: "JIMENAFERNANDEZ",
+    id: 9,
     nombreCompleto: "JIMENA FERNÁNDEZ",
     especializacionLaboral: "CHÓFER DE EQUIPOS MÓVILES",
     edad: 24,
@@ -106,10 +125,9 @@ export const datosCandidatos: Candidatos[] = [
     habilidadDos: "BUENA PREDISPOSICIÓN",
     habilidadTres: "COMUNICACIÓN EFECTIVA",
     habilidadCuatro: "INGLÉS AVANZADO",
-    infoExtraUno: "HORARIO FULL TIME: SI",
-    infoExtraDos: "MOVILIDAD PROPIA: NO"
+    infoExtraUno: "SI",
+    infoExtraDos: "NO",
+    linkedin: "",
+    imagen: "/imagenes/imagenesCandidatos/JIMENAFERNANDEZ.jpg",
 },
-
-
-
 ]

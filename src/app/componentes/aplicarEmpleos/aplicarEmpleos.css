@@ -1,0 +1,56 @@
+.fade{
+   background-color: #a9aba921 ;
+}
+
+.modal-content{
+    border: none;
+    background-color: rgb(233, 233, 233);
+}
+
+.modal{
+    --bs-modal-margin: 6rem;
+}
+
+.h4{
+    text-align: center;
+    margin: 10px;
+}
+
+.formEmpleos{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    &  input{
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.botonAceptar{
+    background-color: #778E70;
+    --bs-btn-border-color: #778E70;
+    --bs-btn-hover-border-color: #778E70;
+    --bs-btn-hover-bg: #778E70;
+    transition: 0.3s;
+    color: white;
+    border-radius: 5px;
+}
+
+.botonAceptar:hover{
+    box-shadow: 2px 2px 8px black;
+}
+
+.botonCancelar{
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.botonCancelar:hover{
+    box-shadow: 2px 2px 8px black;
+}
+
+element.style{
+    display: none;
+}

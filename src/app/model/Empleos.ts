@@ -5,4 +5,12 @@ export default interface Empleos {
     rubro: string,
     requisitos: string,
     descripcion: string,
+    mostrarModal: boolean,
+  };
+
+
+  export const postulantes: any[] = []; 
+
+  export const agregarPostulante = (postulante: any) => {
+    postulantes.push(postulante);
   };

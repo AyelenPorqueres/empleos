@@ -11,7 +11,7 @@ export const CardCandidatos = (props: any) => {
       {datos.map((item: Candidatos) => (
         <div className="containerCandidatos">
           <div className="contenedorImg">
-            <img src={`/imagenes/imagenesCandidatos/${item.id}.jpg`} className="imgCard" alt="ALFONSO JUAREZ" />
+            <img src={!item.imagen ? '/imagenes/imagenesCandidatos/usuarioSinFoto.jpg' : item.imagen} className="imgCard" alt="ALFONSO JUAREZ" />
           </div>
           <div className="infoPersonal">
             <p className="textNombre">{item.nombreCompleto}</p>
@@ -27,8 +27,8 @@ export const CardCandidatos = (props: any) => {
           </div>
 
           <div className="divHabilidadesExtras">
-            <p>{item.infoExtraUno}</p>
-            <p>{item.infoExtraDos}</p>
+            <p>{`HORARIO FULL TIME: ${item.infoExtraUno}`}</p>
+            <p>{`MOVILIDAD PROPIA:${item.infoExtraDos}`}</p>
             <button type="button" className="buttonLinkedin"><i className="bi bi-linkedin"></i> Linkedin</button>
           </div>
         </div>
