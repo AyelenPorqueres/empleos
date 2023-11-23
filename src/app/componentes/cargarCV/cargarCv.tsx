@@ -7,6 +7,7 @@ import Candidatos from '@/app/model/Candidatos';
 import './cargarCv.css'
 
 function CargarCv(props: any) {
+  const { handleAltaCandidato }: { handleAltaCandidato: Function } = props;
 
   const [show, setShow] = useState(false);
   const handleClose = () => {
@@ -14,15 +15,25 @@ function CargarCv(props: any) {
     reset();
   }
 
+  const [file, setFile] = useState<any>();
+
   const handleShow = () => setShow(true);
 
-  const { handleAltaCandidato }: { handleAltaCandidato: Function } = props;
+  const cargarImagen = (e:any) => {
+    setFile(URL.createObjectURL(e.target.files[0]));
+  }
 
   const { register, handleSubmit, reset, getValues, formState: { errors } } = useForm<Candidatos>();
   const onSubmit: SubmitHandler<Candidatos> = (candidato) => {
-    handleAltaCandidato(candidato);
+    const newCandidato = 
+    {...candidato,
+      imagen: file,
+    } 
+    console.log(newCandidato)
+    handleAltaCandidato(newCandidato);
     //validaciones
-    reset();
+    setFile(undefined);
+    handleClose();
   };
 
   return (
@@ -54,7 +65,8 @@ function CargarCv(props: any) {
               {errors.edad && <small className='texto-validaciones'>{errors.edad.message}</small>}
             </div>
             <label className='form-label label-cv'>Foto de perfil</label>
-            <input className='form-control input-cv' type="file" />
+            <input className='form-control input-cv' type="file"  accept='image/png,image/jpeg,image/jpg' name='files' 
+            onChange={cargarImagen} />
             <div>
               <label className='form-label label-cv'>Habilidades</label>
               <div className='input-group'>
