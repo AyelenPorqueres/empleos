@@ -4,55 +4,45 @@ import Modal from 'react-bootstrap/Modal';
 import './aplicarEmpleos.css';
 import Empleos, { agregarPostulante } from '@/app/model/Empleos';
 
-interface Empleo {
-  id: number;
-  mostrarInfo: boolean;
-}
-
 interface AplicarEmpleosProps {
   handleClose: () => void;
 }
 
 export function AplicarEmpleos(props: any) {
-  const { empleo, handleClose } = props;
-  const [misDatos, setMisDatos] = useState<Empleo[]>([{ id: empleo.id, mostrarInfo: true }]);
+  const { empleo, cerrarModal } : {empleo:Empleos,cerrarModal:Function} = props;
+  const [show, setShow] = useState(true);
   const [userInfo, setUserInfo] = useState({
     nombre: '',
     email: '',
     numeroContacto: '',
   });
-  const [isFormularioValido, setIsFormularioValido] = useState(false);
+  
+  const mostrarAlerta = () => {
+    alert("Su solicitud ha sido enviada, nos pondremos en contacto contigo. Muchas Gracias");
+  }
 
-  const cerrarModal = (id: number) => {
-    const newDatos: Empleo[] = misDatos.map((item) => ({
-      ...item,
-      mostrarInfo: item.id === id && false,
-    }));
-    setMisDatos(newDatos);
-
-    // Agregar el usuario a la lista de postulantes
+  const aplicarEmpleo = () => {
     agregarPostulante(userInfo);
-
     // Mostrar por consola los datos del usuario
     console.log('Datos del usuario:', userInfo);
+    closeModal();
+    mostrarAlerta();
+  }
 
-    // Marcar el formulario como válido
-    setIsFormularioValido(true);
-
-    // Cierra el modal
-    handleClose();
+  //cerrar modal
+  const closeModal = () => {
+    setShow(false);
+    cerrarModal(empleo.id);
   };
 
   return (
     <>
-      <Modal className="modalEmpleos" show onHide={handleClose}>
+      <Modal className="modalEmpleos" show onHide={() => closeModal()}>
         <Modal.Header closeButton>
-          <Modal.Title>¿Deseas aplicar a este empleo?</Modal.Title>
+          <Modal.Title>¿Deseas aplicar a este empleo? {empleo.puesto} </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {misDatos.map((item) =>
-            item.mostrarInfo ? (
-              <form className="formEmpleos" key={item.id}>
+              <form className="formEmpleos">
                 <label htmlFor="nombre">Nombre Completo:</label>
                 <input
                   type="text"
@@ -78,14 +68,12 @@ export function AplicarEmpleos(props: any) {
                   onChange={(e) => setUserInfo({ ...userInfo, numeroContacto: e.target.value })}
                 />
               </form>
-            ) : null
-          )}
         </Modal.Body>
         <Modal.Footer className="footerBotones">
           <Button className="botonCancelar" variant="secondary" onClick={() => cerrarModal(empleo.id)}>
             Cancelar
           </Button>
-          <Button className="botonAceptar" variant="primary" onClick={() => cerrarModal(empleo.id)}>
+          <Button className="botonAceptar" variant="primary" onClick={() => aplicarEmpleo()}>
             Aplicar a Empleo
           </Button>
         </Modal.Footer>

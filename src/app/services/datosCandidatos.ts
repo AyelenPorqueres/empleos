@@ -13,7 +13,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "SI",
     linkedin: "",
-    imagen:"ALFONSOJUAREZ"
+    imagen:"/imagenes/imagenesCandidatos/ALFONSOJUAREZ.jpg"
 },
 {
     id: 2,
@@ -27,7 +27,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "NO",
     infoExtraDos: "SI",
     linkedin: "",
-    imagen:"ELENARODRIGUEZ"
+    imagen:"/imagenes/imagenesCandidatos/ELENARODRIGUEZ.jpg"
 },
 {
     id: 3,
@@ -41,7 +41,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "NO",
     infoExtraDos: "SI",
     linkedin: "",
-    imagen: "LUCASPEREZ",
+    imagen: "/imagenes/imagenesCandidatos/LUCASPEREZ.jpg",
 
 },
 {
@@ -56,7 +56,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "NO",
     linkedin: "",
-    imagen: "TAMARABENITEZ",
+    imagen: "/imagenes/imagenesCandidatos/TAMARABENITEZ.jpg",
 },
 {
     id: 5,
@@ -70,7 +70,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "SI",
     linkedin: "",
-    imagen: "FATIMACHAVEZ",
+    imagen: "/imagenes/imagenesCandidatos/FATIMACHAVEZ.jpg",
 },
 {
     id: 6,
@@ -84,7 +84,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "SI",
     linkedin: "",
-    imagen: "RODRIGOGOMEZ",
+    imagen: "/imagenes/imagenesCandidatos/RODRIGOGOMEZ.jpg",
 
 },
 {
@@ -99,7 +99,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "NO",
     linkedin: "",
-    imagen: "LIONELMARTINEZ",
+    imagen: "/imagenes/imagenesCandidatos/LIONELMARTINEZ.jpg",
 
 },
 {
@@ -114,7 +114,7 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "NO",
     linkedin: "",
-    imagen: "ALVARODIAZ",
+    imagen: "/imagenes/imagenesCandidatos/ALVARODIAZ.jpg",
 },
 {
     id: 9,
@@ -128,6 +128,6 @@ export let datosCandidatos: Candidatos[] = [
     infoExtraUno: "SI",
     infoExtraDos: "NO",
     linkedin: "",
-    imagen: "JIMENAFERNANDEZ",
+    imagen: "/imagenes/imagenesCandidatos/JIMENAFERNANDEZ.jpg",
 },
 ]

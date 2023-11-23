@@ -48,6 +48,25 @@
     height: 100%;
 }
 
+.botonInfo{
+    background-color: #495D43;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    width: 25%;
+    transition: .3s;
+
+}
+
+.links-vermas{
+    text-decoration: none ;
+    color: white;
+
+}
+.botonInfo:hover{
+    background-color: #32492bb5;
+}
+
 @media screen and (max-width: 768px){
     .botonInfo{
         width: 80%;

@@ -34,3 +34,28 @@
     color: #597251;
     font-family: 'Rosario', sans-serif;
 }
+
+.img-modal-turismo{
+    width: 250px;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 0.5px solid #597251 ;
+    
+}
+
+.div-modal-turismo{
+    border-bottom: 1px solid #7c9175;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.p-modal-turismo{
+    
+    margin: 2px 20px 1px 10px;
+    
+}
+
+.subtitulo-modal-turismo{
+    color:  #68865F;
+}
