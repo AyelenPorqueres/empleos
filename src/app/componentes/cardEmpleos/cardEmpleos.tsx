@@ -7,14 +7,27 @@ import { AplicarEmpleos } from '../aplicarEmpleos/aplicarEmpleos';
 
 export const CardEmpleos = (props: any) => {
   const { datos }: { datos: Empleos[] } = props;
-  const [show, setShow] = useState(false);
+  const [misDatos, setMisDatos] = useState<Empleos[]>(datos);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const mostrarModal = (id: number) => {
+    const newDatos: Empleos[] = misDatos.map((item) => ({
+        ...item,
+        mostrarModal: item.id == id,
+    }))
+    setMisDatos(newDatos);
+}
+
+ const cerrarModal = (id: number) => {
+    const newDatos: Empleos[] = misDatos.map((item) => ({
+        ...item,
+        mostrarModal: item.id == id && false,
+    }))
+    setMisDatos(newDatos);
+}
 
   return (
     <>
-      {datos.map((item: Empleos) => (
+      {misDatos.map((item: Empleos) => (
         <div className="card d-flex flex-column align-items-center" key={item.id}>
           <img src={`imagenes/imagenesEmpleos/${item.puesto}.jpg`} className="card-img-top" alt={item.puesto} />
           <div className="card-body">
@@ -29,10 +42,10 @@ export const CardEmpleos = (props: any) => {
                 <p className="card-text-description"> RUBRO: {item.rubro}</p>
                 <p className="card-text-description"> REQUISITOS: {item.requisitos}</p>
                 <p className="card-text-description"> CARGA HORARIA: {item.cargaHoraria}hs</p>
-                <button className="button-trabajo" onClick={handleShow}>
+                <button className="button-trabajo" onClick={() => mostrarModal(item.id)}>
                   APLICAR AL EMPLEO
                 </button>
-                {show && <AplicarEmpleos empleo={item} handleClose={handleClose} />}
+                { item.mostrarModal && < AplicarEmpleos empleo={item} cerrarModal={() => cerrarModal(item.id)} />}
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

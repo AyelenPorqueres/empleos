@@ -9,6 +9,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Deporte",
             requisitos: "Mayor de 21 de años, estudiante o profesor de educación fisica.",
             descripcion: "El club San Martin  se encuentra en la búsqueda de profesor/ra para entrenamiento grupal de mañana y de tarde.",
+            mostrarModal : false,
         },
 
         {
@@ -18,6 +19,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Cantera",
             requisitos: "Mayor de 21 años, experiencia de palero/a o similar, carnet de conducir profesional.",
             descripcion: "Cantera Piatti se encuentra en la búsqueda de palero para cubrir turnos rotativos de Lunes a Sábados.",
+            mostrarModal : false,
         },
 
         {
@@ -27,6 +29,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Empleado de comercio",
             requisitos: "Mayor de 18 años, secundario completo, buena predisposición.",
             descripcion: "Supermercado El cóndor se encuentra en la búsqueda de cajero/a para cubrir turno mañana de Lunes a Sábados",
+            mostrarModal : false,
         },
         {
             id: 4,
@@ -35,6 +38,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Pizzeria-restaurant",
             requisitos: "Mayor de 18 años, cursos o carreras relacionados al puesto.",
             descripcion: "Resto-bar Las Sierras busca maestro/a pizzero/a para cubrir un puesto de Martes a Domingos.",
+            mostrarModal : false,
         },
         {
             id: 5,
@@ -43,6 +47,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Seguridad",
             requisitos: "Mayor de 18 años, secundario completo.",
             descripcion: "Cantera Guerrico busca personal capacitado para cubrir puestos de guardia de Lunes a Domingos.",
+            mostrarModal : false,
         },
         {
             id: 6,
@@ -51,6 +56,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Medicina",
             requisitos: "Matricula comprobable, habilidades comunicativas.",
             descripcion: "El hospital de Sierras Bayas se encuentra en la búsqueda de médicos/as para cubrir guardias de día y de noche. ",
+            mostrarModal : false,
         },
         {
             id: 7,
@@ -59,6 +65,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Docente de educación inicial",
             requisitos: "Tecnicatura en prof. de inicial, planificación y organización de las clases.",
             descripcion: "El jardín 911 se encuentra en la búsqueda de profesoras de educación inicial para cubrir el turno tarde.",
+            mostrarModal : false,
         },
         {
             id: 8,
@@ -67,6 +74,7 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Recursos humanos",
             requisitos: "Tec o Lic en rrhh, experiencia comprobable en el puesto o similar mayor a 3 años.",
             descripcion: "Cantera “Guerrico” se encuentra en la búsqueda de jefe/a de recursos humanos para cubrir un turno de Lunes a Sábados.",
+            mostrarModal : false,
         },
         {
             id: 9,
@@ -75,5 +83,6 @@ export const datosEmpleos: Empleos[] = [
             rubro: "Administrativo",
             requisitos: "Tec o Lic en Administración general, buen manejo de paquete office.",
             descripcion: "El Banco Provincia se encuentra en la búsqueda de administrativos/as para cubrir puestos de Lunes a Viernes",
+            mostrarModal : false,
         },
     ]

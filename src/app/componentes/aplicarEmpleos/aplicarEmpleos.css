@@ -11,6 +11,11 @@
     --bs-modal-margin: 6rem;
 }
 
+.h4{
+    text-align: center;
+    margin: 10px;
+}
+
 .formEmpleos{
     display: flex;
     flex-direction: column;
