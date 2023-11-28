@@ -11,7 +11,7 @@ function NumerosDeEmergencia() {
 
 
                 <div className='container-img-p'>
-                    <p>HOSPITAL</p>
+                    <p className='p-hospital'>HOSPITAL</p>
                     <img src="imagenes/imagenesInicio/hospital.png" className='img-emergencia' alt="" />
                     <p className='numero-hospital'>492105</p>
 
