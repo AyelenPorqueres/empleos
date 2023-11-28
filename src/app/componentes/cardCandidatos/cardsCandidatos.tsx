@@ -29,7 +29,9 @@ export const CardCandidatos = (props: any) => {
           <div className="divHabilidadesExtras">
             <p>{`HORARIO FULL TIME: ${item.infoExtraUno}`}</p>
             <p>{`MOVILIDAD PROPIA:${item.infoExtraDos}`}</p>
-            <button type="button" className="buttonLinkedin"><i className="bi bi-linkedin"></i> Linkedin</button>
+             <a className="buttonLinkedin" href={!item.linkedin 
+              ?'https://www.linkedin.com':`https://www.linkedin.com/in/${item.linkedin}` }  target="_blank">
+            <i className="bi bi-linkedin icon-linkedin"></i> Linkedin</a> 
           </div>
         </div>
       ))}
