@@ -2,65 +2,46 @@ import Link from 'next/link';
 import './nav.css'
 
 export const Nav = () => {
-    const goContacto = () => {
-
-    }
-
     return (
         <nav className="menu" >
             <ul className="items">
-                <Link 
-                    className='links'  
-                    href={{pathname: '/',}}
-                >
-                INICIO
+                <Link className='links'
+                    href={{ pathname: '/home', }}
+                >INICIO
                 </Link>
 
-                <Link 
-                className='links'
-                    
+                <Link className='links'
                     href={
                         {
                             pathname: '/cardempleos',
                         }
                     }
-                >
-                    EMPLEOS
+                > EMPLEOS
                 </Link>
-                <Link 
-                className='links'
-                    
+
+                <Link className='links'
                     href={
                         {
                             pathname: '/cardcandidatos',
                         }
                     }
-                >
-                    CANDIDATOS
+                > CANDIDATOS
                 </Link>
-                <Link 
-                className='links'
-                    
+
+                <Link className='links'
                     href={
                         {
                             pathname: '/cardturismo',
                         }
                     }
-                >
-                    TURISMO
+                >TURISMO
                 </Link>
-                <Link 
-                    className='links'
-                    href='#linkcontacto' 
-                >
-                    CONTACTO
+                <Link className='links'
+                    href='/home#linkcontacto'
+                >CONTACTO
                 </Link>
-
-
             </ul>
         </nav>
-
-
 
     );
 }

@@ -1,36 +1,14 @@
-import { Logo } from "./componentes/logo/logo"
-import { Nav } from "./componentes/nav/nav"
-import { Carrousel } from "./componentes/carrousel/carrousel"
-import { Info } from "./componentes/infociudad/info"
-import { Footer } from "./componentes/footer/footer"
-import ServiciosComponent from "./componentes/serviciosHome/servicios";
-import { Contacto } from "./componentes/contacto/Contacto"
-import './page.css'
-import NumerosDeEmergencia from "./componentes/numerosEmergencia/numerosEmergencia"
-
+"use client";
+import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/home");
+  }, []);
+  
   return (
-    <>
-      <header>
-        <div className='fondologo'>
-          <Logo></Logo>
-        </div>
-
-        <Nav></Nav>
-
-      </header>
-
-      <main>
-        <Carrousel />
-        <Info></Info>
-        <ServiciosComponent />
-        <NumerosDeEmergencia></NumerosDeEmergencia>
-        <Contacto></Contacto>
-       
-      </main>
-
-      <Footer></Footer>
-    </>
-  )
+    <></>
+  );
 }
