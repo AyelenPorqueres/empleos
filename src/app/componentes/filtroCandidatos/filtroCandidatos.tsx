@@ -12,7 +12,7 @@ export const FiltroCandidatos = (props: any) => {
     const { buscar }: { buscar: Function } = props;
     const onSubmit: SubmitHandler<FiltroCandidatos> = (datos) => {
         buscar(datos);
-        reset();
+        
     };
 
     return (
