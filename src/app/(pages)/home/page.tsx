@@ -1,7 +1,7 @@
 import { Logo } from "../../componentes/logo/logo"
 import { Nav } from "../../componentes/nav/nav"
 import { Carrousel } from "../../componentes/carrousel/carrousel"
-import { Info } from "../../componentes/infociudad/info"
+import { Info } from "../../componentes/infoPueblo/info"
 import { Footer } from "../../componentes/footer/footer"
 import ServiciosComponent from "../../componentes/serviciosHome/servicios";
 import { Contacto } from "../../componentes/contacto/Contacto"
