@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './aplicarEmpleos.css';
 import Empleos, { agregarPostulante } from '@/app/model/Empleos';
+import { toast } from "react-toastify"
+
 
 interface AplicarEmpleosProps {
   handleClose: () => void;
@@ -18,7 +20,14 @@ export function AplicarEmpleos(props: any) {
   });
   
   const mostrarAlerta = () => {
-    alert("Su solicitud ha sido enviada, nos pondremos en contacto contigo. Muchas Gracias");
+    toast.success("Su solicitud ha sido enviada, nos pondremos en contacto contigo. Muchas Gracias", {position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",});
   }
 
   const aplicarEmpleo = () => {
