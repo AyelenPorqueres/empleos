@@ -2,7 +2,7 @@ import './filtroCandidatos.css'
 import { SubmitHandler, useForm } from "react-hook-form";
  
 interface FiltroCandidatos {
-    nombreApellido: string,
+    nombreCompleto: string,
     edad: string,
     cargaHoraria: string,
     movilidad: string,
@@ -23,7 +23,7 @@ export const FiltroCandidatos: React.FC<FiltroCandidatos> = ({ aplicarFiltros })
 
             <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" onChange={handleSubmit(onChange)}>
                 <label>
-                    <input className="fondoBuscadores selector" {...register("nombreApellido")}>
+                    <input className="fondoBuscadores selector" {...register("nombreCompleto")}>
                         <option value="nombreApellido">Nombre/Apellido</option>
                     </input>
                 </label>

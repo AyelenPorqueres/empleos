@@ -36,54 +36,20 @@ export default function Home() {
     theme: "light",});
   }
 
-  const buscar = (datosFiltro: any) => {
-    // Obtener opciones seleccionadas
-    const { option, value } = datosFiltro;
-
-    // Copiar datos originales para no modificar el estado directamente
-    let datosFiltrados = [...datos];
-
-    // Aplicar filtro por edad si la opción es 'edad'
-    if (option === 'edad' && value) {
-      const [minEdad, maxEdad] = value.split('-').map(Number);
-      datosFiltrados = datosFiltrados.filter((candidato) => candidato.edad >= minEdad && candidato.edad <= maxEdad);
-    }
-
-    // Aplicar filtro por carga horaria si la opción es 'cargaHoraria'
-    if (option === 'cargaHoraria' && value) {
-      datosFiltrados = datosFiltrados.filter((candidato) => candidato.infoExtraUno === value);
-    }
-
-    // Actualizar el estado con los datos filtrados
-    setDatos(datosFiltrados);
-  };
-
-
-/*
-  const aplicarFiltroEdad = (datosFiltro: any) => {
-    // Lógica de filtro según el rango de edades seleccionado
-    if (datosFiltro.option === "edad" && datosFiltro.value) {
-      const [minEdad, maxEdad] = datosFiltro.value.split('-').map(Number);
-      const datosFiltrados = datos.filter((candidato) => candidato.edad >= minEdad && candidato.edad <= maxEdad);
-      setDatos(datosFiltrados);
-    } else {
-      // Restaurar los datos originales si no hay filtro de edad
-      setDatos(datosCandidatos);
-    }
-  };
-
-  //Para carga horaria
-
-  const aplicarFiltroCargaHoraria = (datosFiltro: any) => {
-    // Lógica de filtro según la carga horaria seleccionada
-    // Puedes implementar esta lógica según tus necesidades
-    // Ejemplo: Filtrar candidatos con carga horaria igual a datosFiltro.value
-    const datosFiltrados = datos.filter((candidato) => candidato.infoExtraUno === datosFiltro.value);
-    setDatos(datosFiltrados);
-  };
-  */
+  export default function Home() {
+    const [datos, setDatos] = useState(datosCandidatos);
   
-  
+    const buscar = (datosFiltro: any) => {
+      let newCandidatos: Candidatos[] = [];
+      newCandidatos = datosCandidatos.filter((candidato) => {
+        return (
+        (datosCandidatos.edad == 'seleccione' ? candidato.edad : (datosFiltro.cargaHoraria == 'partTime' ? empleo.cargaHoraria <= 5 : empleo.cargaHoraria > 5) ) &&
+        (datosCandidatos.nombreCompleto != '' ? candidato.nombreCompleto.toLowerCase().includes(datosCandidatos.nombreCompleto.toLowerCase()): datosCandidatos.nombreCompleto) &&
+        (datosCandidatos. != '' ? candidato.rubro.toLowerCase().includes(datosFiltro.rubro.toLowerCase()): empleo.rubro)
+        )
+      });
+      setDatos(newCandidatos);
+    }
 
 /*
   const buscar = (datosFiltro: any) => {
