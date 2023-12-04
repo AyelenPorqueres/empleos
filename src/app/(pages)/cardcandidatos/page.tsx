@@ -36,19 +36,45 @@ export default function Home() {
     theme: "light",});
   }
 
-  const buscar = (datosFiltro: any) => {
-    let newCandidatos: Candidatos[] = [];
+
+
+  
+  Prueba
+
+  const buscarCandidatos = (datosFiltro: FiltroCandidatos) => {
+    // Lógica de filtrado utilizando el rango de edad seleccionado
+    const candidatosFiltrados = datos.filter((candidato) => {
+      // Verificar si la edad del candidato está en el rango seleccionado
+      const edad = parseInt(candidato.edad);
+      const [min, max] = datosFiltro.edad.split("-").map(Number);
+  
+      return edad >= min && edad <= max;
+    });
+
+  };
+  
+
+
+  /*const buscar = (datosFiltro: any) => {
+   
     if (datosFiltro.option == "nombreApellido") {
       newCandidatos = datos.filter(candidato => candidato.nombreCompleto.toLowerCase() == datosFiltro.value.toLowerCase());
-    } else if (datosFiltro.option == "edad") {
+    }
+    if (datosFiltro.option == "edad") {
       newCandidatos = datos.filter(candidato => candidato.edad == datosFiltro.value);
-    } else if (datosFiltro.option == "fullTime") {
+    }
+    if (datosFiltro.option == "fullTime") {
       newCandidatos = datos.filter(candidato => candidato.infoExtraUno.toLowerCase() == datosFiltro.value.toLowerCase());
-    } else if (datosFiltro.option == "movilidad") {
+    } 
+    if (datosFiltro.option == "movilidad") {
       newCandidatos = datos.filter(candidato => candidato.infoExtraDos.toLowerCase() == datosFiltro.value.toLowerCase());
     }
     setDatos(newCandidatos);
-  }
+  }*/
+
+
+
+
     return (
       <>
         <header>
@@ -56,7 +82,7 @@ export default function Home() {
             <Logo></Logo>
             <Nav></Nav>
           </div>
-          <FiltroCandidatos buscar={(datos: any) => buscar(datos)} />
+          <FiltroCandidatos /* buscar={(datos: any) => buscar(datos)} */ buscar={buscarCandidatos}/>
         </header>
         <main>
           <CargarCv handleAltaCandidato={(candidato: Candidatos) => handleAltaCandidato(candidato)} />
