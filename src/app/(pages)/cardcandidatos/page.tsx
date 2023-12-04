@@ -36,26 +36,25 @@ export default function Home() {
     theme: "light",});
   }
 
-
-
-  
-  Prueba
-
-  const buscarCandidatos = (datosFiltro: FiltroCandidatos) => {
-    // Lógica de filtrado utilizando el rango de edad seleccionado
-    const candidatosFiltrados = datos.filter((candidato) => {
-      // Verificar si la edad del candidato está en el rango seleccionado
-      const edad = parseInt(candidato.edad);
-      const [min, max] = datosFiltro.edad.split("-").map(Number);
-  
-      return edad >= min && edad <= max;
-    });
-
+  const buscar = (datosFiltro: any) => {
+    // Lógica de filtro según el rango de edades seleccionado
+    if (datosFiltro.option === "edad" && datosFiltro.value) {
+      const [minEdad, maxEdad] = datosFiltro.value.split('-').map(Number);
+      const datosFiltrados = datos.filter((candidato) => candidato.edad >= minEdad && candidato.edad <= maxEdad);
+      setDatos(datosFiltrados);
+    } else {
+      // Restaurar los datos originales si no hay filtro de edad
+      setDatos(datosCandidatos);
+    }
   };
+
+
+  
+ 
   
 
-
-  /*const buscar = (datosFiltro: any) => {
+/*
+  const buscar = (datosFiltro: any) => {
    
     if (datosFiltro.option == "nombreApellido") {
       newCandidatos = datos.filter(candidato => candidato.nombreCompleto.toLowerCase() == datosFiltro.value.toLowerCase());
@@ -82,7 +81,7 @@ export default function Home() {
             <Logo></Logo>
             <Nav></Nav>
           </div>
-          <FiltroCandidatos /* buscar={(datos: any) => buscar(datos)} */ buscar={buscarCandidatos}/>
+          <FiltroCandidatos  buscar={(datos: any) => buscar(datos)}/>
         </header>
         <main>
           <CargarCv handleAltaCandidato={(candidato: Candidatos) => handleAltaCandidato(candidato)} />
