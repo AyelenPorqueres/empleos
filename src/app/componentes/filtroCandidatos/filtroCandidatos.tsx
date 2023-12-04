@@ -1,14 +1,13 @@
 import './filtroCandidatos.css'
 import { SubmitHandler, useForm } from "react-hook-form";
+ 
 
-export interface FiltroCandidatos {
+export const FiltroCandidatos = (props: any) => {
+    interface FiltroCandidatos {
         option: string,
         value: string,
         edad: number,
     }
-
-export const FiltroCandidatos = (props: any) => {
-    
     const { register, handleSubmit, reset } = useForm<FiltroCandidatos>();
     const { buscar }: { buscar: Function } = props;
 
