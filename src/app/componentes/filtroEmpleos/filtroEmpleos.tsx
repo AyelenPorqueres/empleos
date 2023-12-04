@@ -1,18 +1,20 @@
 import './filtroEmpleos.css'
 import { SubmitHandler, useForm } from "react-hook-form";
+
 export const FiltroEmpleos = (props: any) => {
     interface FiltroEmpleos {
-        option: string,
-        value: string,
-
+        cargaHoraria: string,
+        rubro: string,
+        puesto: string
     }
 
-    const { register, handleSubmit, reset } = useForm<FiltroEmpleos>();
+    const { register, getValues, reset } = useForm<FiltroEmpleos>();
     const { buscar }: { buscar: Function } = props;
-    const onSubmit: SubmitHandler<FiltroEmpleos> = (datos) => {
+
+    /*const onSubmit: SubmitHandler<FiltroEmpleos> = (datos) => {
         buscar(datos);
         reset();
-    };
+    };*/
 
     return (
         <>
@@ -20,21 +22,30 @@ export const FiltroEmpleos = (props: any) => {
             
             
             
-                <form className='contenedor d-flex flex-row justify-content-center align-items-center' action="search" onSubmit={handleSubmit(onSubmit)}>
-                        <select className="fondoBuscadores selector" {...register("option")}>
-                            <option value="cargaHoraria">Carga Horaria</option>
-                            <option value="rubro">Rubro</option>
-                            <option value="puesto">Puesto</option>
+                <form className='contenedor d-flex flex-row justify-content-center align-items-center' action="search">
+                        <select className="fondoBuscadores selector" {...register("cargaHoraria", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}>
+                            <option value="seleccione">Seleccione</option>
+                            <option value="partTime">Part Time</option>
+                            <option value="fullTime">Full Time</option>
                         </select>
 
+                        <label className='form-label'>Puesto</label>
+                        <input className='form-control' {...register("puesto", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}></input>
 
-                
-                    <div className="buscar">    
-                            <input  id='letraBuscador' className='aver'  type="text" placeholder='buscar' {...register("value")} />
-                            <button id='submitNo' className='botonEnviarSubmit' type="submit" >
-                                <i className='fa fa-search' ></i>
-                            </button> 
-                    </div>
+                        <label className='form-label'>Rubro</label>
+                        <input className='form-control' {...register("rubro", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}></input>
                 </form>
 
 
