@@ -8,6 +8,7 @@ export const FiltroEmpleos = (props: any) => {
         puesto: string
     }
 
+
     const { register, getValues, reset } = useForm<FiltroEmpleos>();
     const { buscar }: { buscar: Function } = props;
 
