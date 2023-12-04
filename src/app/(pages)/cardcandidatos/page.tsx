@@ -36,7 +36,7 @@ export default function Home() {
     theme: "light",});
   }
 
-  const aplicarFiltros = (datosFiltro: any) => {
+  const buscar = (datosFiltro: any) => {
     // Obtener opciones seleccionadas
     const { option, value } = datosFiltro;
 
@@ -113,7 +113,7 @@ export default function Home() {
             <Logo></Logo>
             <Nav></Nav>
           </div>
-          <FiltroCandidatos  aplicarFiltros={aplicarFiltros}/>
+          <FiltroCandidatos  buscar={(datos: any) => buscar(datos)}/>
         </header>
         <main>
           <CargarCv handleAltaCandidato={(candidato: Candidatos) => handleAltaCandidato(candidato)} />

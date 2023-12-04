@@ -1,10 +1,7 @@
 import './filtroCandidatos.css'
 import { SubmitHandler, useForm } from "react-hook-form";
  
-interface FiltroCandidatosProps {
-    aplicarFiltros: (datos: any) => void;
-  }
-interface FiltroCandidatosFormData {
+interface FiltroCandidatos {
     nombreApellido: string,
     edad: string,
     cargaHoraria: string,
@@ -12,10 +9,11 @@ interface FiltroCandidatosFormData {
 
 }
 
-export const FiltroCandidatos: React.FC<FiltroCandidatosProps> = ({ aplicarFiltros }) => {
-    const { register, handleSubmit } = useForm<FiltroCandidatosFormData>();
+export const FiltroCandidatos: React.FC<FiltroCandidatos> = ({ aplicarFiltros }) => {
+    const { register, getValues, reset } = useForm<FiltroCadidatos>();
+    const { buscar }: { buscar: Function } = props;
   
-    const onChange: SubmitHandler<FiltroCandidatosFormData> = (data) => {
+    const onChange: SubmitHandler<FiltroCandidatos> = (data) => {
       aplicarFiltros(data); // Pasar directamente los datos al componente principal
     };
     
@@ -31,7 +29,11 @@ export const FiltroCandidatos: React.FC<FiltroCandidatosProps> = ({ aplicarFiltr
                 </label>
 
                 <label>
-                    <select className="fondoBuscadores selector" {...register("edad")}>
+                <select className="fondoBuscadores selector" {...register("cargaHoraria", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}></select>
                         <option value="">Edad...</option>
                         <option value="18-25">18-25</option>
                         <option value="26-33">26-33</option>
