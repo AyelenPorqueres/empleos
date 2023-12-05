@@ -6,8 +6,8 @@ import { SubmitHandler, useForm } from "react-hook-form";
 interface FiltroCandidatos {
     nombreCompleto: string,
     edad: string,
-    cargaHoraria: string,
-    movilidad: string,
+    infoExtraUno: string,
+    infoExtraDos: string,
 
 }
 
@@ -44,7 +44,7 @@ interface FiltroCandidatos {
                 </label>
 
                 <label>
-                    <select className="fondoBuscadores selector" {...register("cargaHoraria", {
+                    <select className="fondoBuscadores selector" {...register("infoExtraUno", {
                         onChange: () => {
                             const values = getValues();
                             buscar(values)}
@@ -57,7 +57,7 @@ interface FiltroCandidatos {
                 </label>
 
                 <label>
-                    <select className="fondoBuscadores selector" {...register("movilidad", {
+                    <select className="fondoBuscadores selector" {...register("infoExtraDos", {
                         onChange: () => {
                             const values = getValues();
                         buscar(values)}
