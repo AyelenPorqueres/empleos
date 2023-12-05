@@ -20,7 +20,11 @@ interface FiltroCandidatos {
 
             <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" /*onChange={handleSubmit(onChange)}*/>
                 <label>
-                    <input className="fondoBuscadores selector" {...register("nombreCompleto")} placeholder='Buscar'></input>
+                    <input placeholder='Buscar' className="fondoBuscadores selector" {...register("nombreCompleto", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                    })} ></input>
                 </label>
 
                 <label>
@@ -40,16 +44,24 @@ interface FiltroCandidatos {
                 </label>
 
                 <label>
-                    <select className="fondoBuscadores selector" {...register("cargaHoraria")}>
+                    <select className="fondoBuscadores selector" {...register("cargaHoraria", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                        })} >
                         <option value="seleccioneCargaHoraria">Carga Horaria...</option>
-                        <option value="fullTime">Full-Time</option>
                         <option value="partTime">Part-Time</option>
+                        <option value="fullTime">Full-Time</option>
                     </select>
 
                 </label>
 
                 <label>
-                    <select className="fondoBuscadores selector" {...register("movilidad")}>
+                    <select className="fondoBuscadores selector" {...register("movilidad", {
+                        onChange: () => {
+                            const values = getValues();
+                        buscar(values)}
+                    })}>
                         <option value="seleccioneMovilidad">Movilidad...</option>
                         <option value="movilidadSi">Si</option>
                         <option value="movilidadNo">No</option>
