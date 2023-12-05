@@ -59,13 +59,21 @@ p{
         color: white;
         border-radius: 3px;
         transition: .5s;
+        text-decoration: none;
+        text-transform: initial;
+        font-size: 15px;
         
     }
 
     .buttonLinkedin:hover{
         transform: scale(1.1,1.1);
     }
+    .icon-linkedin{
+        font-size: 20px;
+    }
 }
+
+
 
 .contenedorImg {
     height: 7rem;
