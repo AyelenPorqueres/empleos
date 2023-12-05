@@ -1,5 +1,7 @@
 import './filtroCandidatos.css'
 import { SubmitHandler, useForm } from "react-hook-form";
+ export const FiltroCandidatos = (props: any) => {
+
  
 interface FiltroCandidatos {
     nombreCompleto: string,
@@ -9,19 +11,14 @@ interface FiltroCandidatos {
 
 }
 
-export const FiltroCandidatos: React.FC<FiltroCandidatos> = ({ aplicarFiltros }) => {
-    const { register, getValues, reset } = useForm<FiltroCadidatos>();
-    const { buscar }: { buscar: Function } = props;
-  
-    const onChange: SubmitHandler<FiltroCandidatos> = (data) => {
-      aplicarFiltros(data); // Pasar directamente los datos al componente principal
-    };
+    const {register, getValues, reset} = useForm<FiltroCandidatos>();
+    const {buscar}: {buscar: Function} = props;
     
     return (
         <>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
 
-            <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" onChange={handleSubmit(onChange)}>
+            <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" /*onChange={handleSubmit(onChange)}*/>
                 <label>
                     <input className="fondoBuscadores selector" {...register("nombreCompleto")}>
                         <option value="nombreApellido">Nombre/Apellido</option>
@@ -29,12 +26,12 @@ export const FiltroCandidatos: React.FC<FiltroCandidatos> = ({ aplicarFiltros })
                 </label>
 
                 <label>
-                <select className="fondoBuscadores selector" {...register("cargaHoraria", {
+                <select className="fondoBuscadores selector" {...register("edad", {
                         onChange: () => {
                             const values = getValues();
                             buscar(values)}
-                            })}></select>
-                        <option value="">Edad...</option>
+                            })}>
+                        <option value="seleccione">Edad...</option>
                         <option value="18-25">18-25</option>
                         <option value="26-33">26-33</option>
                         <option value="34-41">34-41</option>
