@@ -18,7 +18,7 @@ export const FiltroCandidatos = (props: any) => {
         <>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
 
-            <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" /*onChange={handleSubmit(onChange)}*/>
+            <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" >
                 <label className='label-filtro'>Nombre y apellido</label>
                 <input placeholder='Buscar' className="fondoBuscadores selector" {...register("nombreCompleto", {
                     onChange: () => {
