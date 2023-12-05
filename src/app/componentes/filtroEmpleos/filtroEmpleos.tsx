@@ -21,9 +21,8 @@ export const FiltroEmpleos = (props: any) => {
         <>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
             
-            
-            
                 <form className='contenedor d-flex flex-row justify-content-center align-items-center' action="search">
+                        <label className='label-buscador'>Carga Horaria</label>
                         <select className="fondoBuscadores selector" {...register("cargaHoraria", {
                         onChange: () => {
                             const values = getValues();
@@ -34,14 +33,14 @@ export const FiltroEmpleos = (props: any) => {
                             <option value="fullTime">Full Time</option>
                         </select>
 
-                        <label className='form-label'>Puesto</label>
+                        <label className='label-buscador'>Puesto</label>
                         <input placeholder='Buscar' className='fondoBuscadores selector' {...register("puesto", {
                         onChange: () => {
                             const values = getValues();
                             buscar(values)}
                             })}></input>
 
-                        <label className='form-label'>Rubro</label>
+                        <label className='label-buscador'>Rubro</label>
                         <input placeholder='Buscar' className='fondoBuscadores selector' {...register("rubro", {
                         onChange: () => {
                             const values = getValues();
