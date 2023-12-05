@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.buscador {
+.label-buscador {
     color: white;
     outline: 0;
 }
@@ -54,7 +54,7 @@ select option {
     position: absolute;
     width: 52px;
     height: 50px;
-    line-height: 48px;
+    line-height: 45px;
     top: 0;
     right: 0;
     background-color: #6c965f;
@@ -65,22 +65,8 @@ select option {
     cursor: pointer;
 }
 
-.botonFiltro {
-    position: absolute;
-    width: 52px;
-    height: 50px;
-    line-height: 48px;
-    top: 0;
-    right: 0;
-    background-color: #6c965f;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
-.buscar:hover input:not(#submitNo) {
+.buscar:hover input{
     background-color: #EEEDDE;
     width: 240px;
 }

@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './aplicarEmpleos.css';
 import Empleos, { agregarPostulante } from '@/app/model/Empleos';
 import { toast } from "react-toastify"
 
-
-interface AplicarEmpleosProps {
-  handleClose: () => void;
-}
 
 export function AplicarEmpleos(props: any) {
   const { empleo, cerrarModal } : {empleo:Empleos,cerrarModal:Function} = props;

@@ -15,15 +15,16 @@ export default function Home() {
 
   const buscar = (datosFiltro: any) => {
     let newEmpleos: Empleos[] = [];
-    if (datosFiltro.option == "puesto") {
-      newEmpleos = datos.filter(empleo => empleo.puesto.toLowerCase() == datosFiltro.value.toLowerCase());
-    } else if (datosFiltro.option == "rubro") {
-      newEmpleos = datos.filter(empleo => empleo.rubro.toLowerCase() == datosFiltro.value);
-    } else if (datosFiltro.option == "cargaHoraria") {
-      newEmpleos = datos.filter(empleo => empleo.cargaHoraria == datosFiltro.value.toLowerCase());
-    }
+    newEmpleos = datosEmpleos.filter((empleo) => {
+      return (
+      (datosFiltro.cargaHoraria == 'seleccione' ? empleo.cargaHoraria : (datosFiltro.cargaHoraria == 'partTime' ? empleo.cargaHoraria <= 5 : empleo.cargaHoraria > 5) ) &&
+      (datosFiltro.puesto != '' ? empleo.puesto.toLowerCase().includes(datosFiltro.puesto.toLowerCase()): empleo.puesto) &&
+      (datosFiltro.rubro != '' ? empleo.rubro.toLowerCase().includes(datosFiltro.rubro.toLowerCase()): empleo.rubro)
+      )
+    });
     setDatos(newEmpleos);
   }
+
   return (
     <>
       <header>

@@ -61,7 +61,7 @@ export const datosImagenesTurismo: ImagenesTurismo[] = [
     },
     {
         id: 5,
-        titulo: "ECO-CIUDAD",
+        titulo: "ECO-PUEBLO",
         subtitulo: "Ecologia y medio ambiente",
         descripcion: "Corazon para reciclar tapas: El proyecto fue creado por la organización de ploggin serrano, las tapas serán para colaborar con el hospital Garrahan. El mismo se encuentra ubicado frente a la Iglesia Cristo Rey.",
         imagenUno: "corazon-tapitas.jpg",
