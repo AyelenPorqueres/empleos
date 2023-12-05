@@ -35,14 +35,14 @@ export const FiltroEmpleos = (props: any) => {
                         </select>
 
                         <label className='form-label'>Puesto</label>
-                        <input className='form-control' {...register("puesto", {
+                        <input placeholder='Buscar' className='fondoBuscadores selector' {...register("puesto", {
                         onChange: () => {
                             const values = getValues();
                             buscar(values)}
                             })}></input>
 
                         <label className='form-label'>Rubro</label>
-                        <input className='form-control' {...register("rubro", {
+                        <input placeholder='Buscar' className='fondoBuscadores selector' {...register("rubro", {
                         onChange: () => {
                             const values = getValues();
                             buscar(values)}
