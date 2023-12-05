@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import Figure from 'react-bootstrap/Figure';
 import ImagenesTurismo from '@/app/model/ImagenesTurismo';
@@ -28,6 +30,7 @@ export const ImagenesTurismo = (props: any) => {
     return (
         <>
             {misDatos.map((item: ImagenesTurismo) => (
+                // eslint-disable-next-line react/jsx-key
                 <Figure className='figure-turismo'>
                     <Figure.Image className='figure-img-turismo' width={250} height={250} src={`imagenes/imagenesTurismo/${item.titulo}.jpg`} alt={item.titulo}
                     />

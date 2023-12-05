@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import './logo.css'
 
 export const Logo = () => {

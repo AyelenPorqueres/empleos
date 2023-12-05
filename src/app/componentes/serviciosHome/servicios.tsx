@@ -5,7 +5,7 @@ function Servicios() {
   return (
     <div className='serviciosContainer'>
         <h2>SERVICIOS QUE BRINDAMOS</h2>
-        <p>El municipio ofrece en un mismo sitio la posibilidad de integrar la oferta y demanda 
+        <p className="text">El municipio ofrece en un mismo sitio la posibilidad de integrar la oferta y demanda 
             laboral existente en el pueblo. Las empresas podrán contar con un listado actualizado 
             de los candidatos de la zona y también publicar sus puestos vacantes. Por otra parte la 
             comunidad podrá cargar sus currículum y postularse a los empleos disponibles.

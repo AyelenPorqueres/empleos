@@ -1,59 +1,45 @@
+.divTitulo{
+    justify-content: center;
+}
 .emergenciaContainer{
     justify-content: center;
-    margin-left: 25px;
-    margin-bottom: -70px;
-    
 }
 
-.img-emergencia{
+.imgEmergencia{
     width: 100px;
     height: 100px;
-  
-   
 }
-.container-titulo-emergencia{
-    justify-content: center;
-    margin-bottom: -40px;
-   margin-top: -30px;
-   
-}
-.titulo-emergencia{
+
+.tituloEmergencia{
     text-align: center;
     font-size: 25px;   
     color: #495D43;
     justify-content: center;
     
 }
-.container-img-p{
-    padding: 70px;
-    
+.containerImgP{
+    padding: 70px;    
 }
 
-.p-hospital{
+.pImg{
     margin-left: 15px;
-}
-.numero-hospital{
-    margin-left: 20px;
-}
-.p-policia{
-    margin-left: 15px;
-    
 }
 
-.numero-policia{
+.numero{
     margin-left: 20px;
 }
 
-.p-bomberos{
-    margin-left: 15px;
-}
-
-.numero-bomberos{
+.numeroBomberos{
     margin-left: 47px;
     
 }
 
-.img-bomberos{
+.imgBomberos{
     margin-left: 10px;
 }
 
+@media screen and (max-width: 376px) {
+    .containerImgP{
+        padding: 1rem ;    
+    }
+}

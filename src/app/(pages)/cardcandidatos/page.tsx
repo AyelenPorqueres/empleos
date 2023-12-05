@@ -52,7 +52,7 @@ export default function Home() {
     return (
       <>
         <header>
-          <div className="d-flex flex-row align-items-center nav-logo">
+          <div className="d-flex  align-items-center nav-logo">
             <Logo></Logo>
             <Nav></Nav>
           </div>

@@ -1,11 +1,10 @@
 .card {
-    width: 30%;
-    /*height: 450px;*/
-    margin: 20px;
-    padding: 5px;
-    box-shadow: 5px 5px 5px #74926b;
-    border-color: #495d43;
+    width: 22rem;
     background-color: #eeedde;
+    margin: 50px 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border-color: #495d43;
    
 }
 
@@ -21,7 +20,7 @@
     transform: translateY(-1rem);
     border-radius: 5px;
     /*margin: 5px;*/
-    border: 0.5px solid #495d4394 ;
+    border: 1px solid rgba(0, 0, 0, 0.3) ;
 }
 
 .card-text-title{
@@ -79,6 +78,7 @@
     border-radius: 2px;
     margin-top: -10px;
     align-items: center;
+    gap: .5rem;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -95,5 +95,11 @@
 
 .button-vermas:hover{
     background-color: #769b6a;
+}
+
+@media screen and (max-width: 376px){
+    .button-trabajo{
+      width: 10rem;
+    }
 }
 

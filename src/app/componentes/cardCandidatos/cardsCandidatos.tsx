@@ -10,7 +10,7 @@ export const CardCandidatos = (props: any) => {
     <>
       {datos.map((item: Candidatos) => (
         <div className="containerCandidatos">
-          <div className="contenedorImg">
+          <div className="containerImg">
             <img src={!item.imagen ? '/imagenes/imagenesCandidatos/usuarioSinFoto.jpg' : item.imagen} className="imgCard" alt="ALFONSO JUAREZ" />
           </div>
           <div className="infoPersonal">

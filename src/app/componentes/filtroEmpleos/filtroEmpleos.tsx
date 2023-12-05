@@ -20,14 +20,12 @@ export const FiltroEmpleos = (props: any) => {
             
             
             
-                <form className='contenedor d-flex flex-row justify-content-center align-items-center' action="search" onSubmit={handleSubmit(onSubmit)}>
+                <form className='contenedor d-flex  justify-content-center align-items-center' action="search" onSubmit={handleSubmit(onSubmit)}>
                         <select className="fondoBuscadores selector" {...register("option")}>
                             <option value="cargaHoraria">Carga Horaria</option>
                             <option value="rubro">Rubro</option>
                             <option value="puesto">Puesto</option>
                         </select>
-
-
                 
                     <div className="buscar">    
                             <input  id='letraBuscador' className='aver'  type="text" placeholder='buscar' {...register("value")} />

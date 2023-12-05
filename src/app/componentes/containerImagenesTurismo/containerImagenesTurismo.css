@@ -1,4 +1,6 @@
 .container-cards-turismo {
+  display: flex;
+  flex-wrap: wrap;
     background-color: white;
     
     margin: 20px 90px;
