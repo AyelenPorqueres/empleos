@@ -20,9 +20,7 @@ interface FiltroCandidatos {
 
             <form className="contenedor d-flex flex-row justify-content-center align-items-center" action="search" /*onChange={handleSubmit(onChange)}*/>
                 <label>
-                    <input className="fondoBuscadores selector" {...register("nombreCompleto")}>
-                        <option value="nombreApellido">Nombre/Apellido</option>
-                    </input>
+                    <input className="fondoBuscadores selector" {...register("nombreCompleto")} placeholder='Buscar'></input>
                 </label>
 
                 <label>
@@ -43,7 +41,7 @@ interface FiltroCandidatos {
 
                 <label>
                     <select className="fondoBuscadores selector" {...register("cargaHoraria")}>
-                        <option value="">Carga Horaria...</option>
+                        <option value="seleccioneCargaHoraria">Carga Horaria...</option>
                         <option value="fullTime">Full-Time</option>
                         <option value="partTime">Part-Time</option>
                     </select>
@@ -52,7 +50,7 @@ interface FiltroCandidatos {
 
                 <label>
                     <select className="fondoBuscadores selector" {...register("movilidad")}>
-                        <option value="">Movilidad...</option>
+                        <option value="seleccioneMovilidad">Movilidad...</option>
                         <option value="movilidadSi">Si</option>
                         <option value="movilidadNo">No</option>
                     </select>
