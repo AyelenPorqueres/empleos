@@ -55,28 +55,28 @@ export const ImagenesTurismo = (props: any) => {
                             </Modal.Header>
                             <Modal.Body>
 
-                                <div className='d-flex flex-row div-modal-turismo'>
+                                <div className='div-modal-turismo'>
                                     <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenUno}`} />
                                     <p className='p-modal-turismo'>
                                         {item.descripcion}
                                     </p>
                                 </div>
 
-                                <div className='d-flex flex-row div-modal-turismo' >
+                                <div className='div-modal-turismo' >
                                     <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenDos}`} />
                                     <p className='p-modal-turismo'>
                                         {item.descripcionDos}
                                     </p>
                                 </div>
 
-                                <div className='d-flex flex-row div-modal-turismo' >
+                                <div className='div-modal-turismo' >
                                     <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenTres}`} />
                                     <p className='p-modal-turismo'>
                                         {item.descripcionTres}
                                     </p>
                                 </div>
 
-                                <div className='d-flex flex-row div-modal-turismo' >
+                                <div className='div-modal-turismo' >
                                     <img className='img-modal-turismo' src={`imagenes/imagenesTurismo/${item.imagenCuatro}`} />
                                     <p className='p-modal-turismo'>
                                         {item.descripcionCuatro}

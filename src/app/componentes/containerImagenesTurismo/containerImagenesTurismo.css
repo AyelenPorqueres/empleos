@@ -1,8 +1,15 @@
 .container-cards-turismo {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-    background-color: white;
-    
-    margin: 20px 90px;
-    padding: 10px;
+  gap: 1rem;
+  margin: 20px 90px;
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 376px){
+  .container-cards-turismo{
+    margin: 0;
   }
+}

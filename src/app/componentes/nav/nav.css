@@ -26,7 +26,12 @@
     display: block;
     color: white ;
     text-align: center;
-    
+    transition: .3s;
+}
+
+.links:hover{
+    border-bottom: .5px solid white;
+    color: rgba(255, 255, 255, 0.8) ;
 }
 
 @media screen and (max-width: 376px){
