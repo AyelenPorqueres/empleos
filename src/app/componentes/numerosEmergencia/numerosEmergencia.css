@@ -1,8 +1,6 @@
 .emergenciaContainer{
-    justify-content: center;
-    margin-left: 25px;
-    margin-bottom: -70px;
-    
+    width: 50%;
+    margin-bottom: 40px;
 }
 
 .img-emergencia{
@@ -24,36 +22,9 @@
     justify-content: center;
     
 }
-.container-img-p{
-    padding: 70px;
-    
+
+.p-numero-emergencia{
+    font-weight: bold;
 }
 
-.p-hospital{
-    margin-left: 15px;
-}
-.numero-hospital{
-    margin-left: 20px;
-}
-.p-policia{
-    margin-left: 15px;
-    
-}
-
-.numero-policia{
-    margin-left: 20px;
-}
-
-.p-bomberos{
-    margin-left: 15px;
-}
-
-.numero-bomberos{
-    margin-left: 47px;
-    
-}
-
-.img-bomberos{
-    margin-left: 10px;
-}
 

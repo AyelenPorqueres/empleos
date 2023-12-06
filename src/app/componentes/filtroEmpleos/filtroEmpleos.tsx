@@ -1,40 +1,46 @@
 import './filtroEmpleos.css'
 import { SubmitHandler, useForm } from "react-hook-form";
+
 export const FiltroEmpleos = (props: any) => {
     interface FiltroEmpleos {
-        option: string,
-        value: string,
-
+        cargaHoraria: string,
+        rubro: string,
+        puesto: string
     }
 
-    const { register, handleSubmit, reset } = useForm<FiltroEmpleos>();
+
+    const { register, getValues, reset } = useForm<FiltroEmpleos>();
     const { buscar }: { buscar: Function } = props;
-    const onSubmit: SubmitHandler<FiltroEmpleos> = (datos) => {
-        buscar(datos);
-        
-    };
 
     return (
         <>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></link>
             
-            
-            
-                <form className='contenedor d-flex flex-row justify-content-center align-items-center' action="search" onSubmit={handleSubmit(onSubmit)}>
-                        <select className="fondoBuscadores selector" {...register("option")}>
-                            <option value="cargaHoraria">Carga Horaria</option>
-                            <option value="rubro">Rubro</option>
-                            <option value="puesto">Puesto</option>
+                <form className='contenedor d-flex flex-row justify-content-center align-items-center' action="search">
+                        <label className='label-buscador'>Carga Horaria</label>
+                        <select className="fondoBuscadores selector" {...register("cargaHoraria", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}>
+                            <option value="seleccione">Seleccione</option>
+                            <option value="partTime">Part Time</option>
+                            <option value="fullTime">Full Time</option>
                         </select>
 
+                        <label className='label-buscador'>Puesto</label>
+                        <input placeholder='Buscar' className='fondoBuscadores selector' {...register("puesto", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}></input>
 
-                
-                    <div className="buscar">    
-                            <input  id='letraBuscador' className='aver'  type="text" placeholder='buscar' {...register("value")} />
-                            <button id='submitNo' className='botonEnviarSubmit' type="submit" >
-                                <i className='fa fa-search' ></i>
-                            </button> 
-                    </div>
+                        <label className='label-buscador'>Rubro</label>
+                        <input placeholder='Buscar' className='fondoBuscadores selector' {...register("rubro", {
+                        onChange: () => {
+                            const values = getValues();
+                            buscar(values)}
+                            })}></input>
                 </form>
 
 
