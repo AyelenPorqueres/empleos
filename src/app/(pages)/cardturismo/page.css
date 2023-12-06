@@ -1,6 +1,12 @@
 .nav-logo{
-    
     background-color: #495d43;
     border-bottom-style: solid ;
     border-bottom-color: white;
+}
+
+@media screen and (max-width: 976px){
+    .nav-logo{
+        display: flex;
+        flex-direction: column;
+    }
 }

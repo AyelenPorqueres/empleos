@@ -1,30 +1,45 @@
+.divTitulo{
+    justify-content: center;
+}
 .emergenciaContainer{
-    width: 50%;
-    margin-bottom: 40px;
+    justify-content: center;
 }
 
-.img-emergencia{
+.imgEmergencia{
     width: 100px;
     height: 100px;
-  
-   
 }
-.container-titulo-emergencia{
-    justify-content: center;
-    margin-bottom: -40px;
-   margin-top: -30px;
-   
-}
-.titulo-emergencia{
+
+.tituloEmergencia{
     text-align: center;
     font-size: 25px;   
     color: #495D43;
     justify-content: center;
     
 }
-
-.p-numero-emergencia{
-    font-weight: bold;
+.containerImgP{
+    padding: 70px;    
 }
 
+.pImg{
+    margin-left: 15px;
+}
 
+.numero{
+    margin-left: 20px;
+}
+
+.numeroBomberos{
+    margin-left: 47px;
+    
+}
+
+.imgBomberos{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 376px) {
+    .containerImgP{
+        padding: 1rem ;    
+    }
+}

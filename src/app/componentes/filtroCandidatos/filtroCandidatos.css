@@ -1,12 +1,20 @@
-.contenedor {
-    display: flex;
-    justify-content: center;
-    background-color: #495D43;
-    height: 70px;
-    text-align: center;
+.filter {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.label-filtro {
+.contenedor {
+    background-color: #495D43;
+    height: auto;
+    text-align: center;
+
+    & div{
+        margin: 0 15px;
+    }
+}
+
+.labelFiltro {
     color: white;
 }
 
@@ -14,15 +22,10 @@
     height: 25px;
     background-color: #EEEDDE;
     outline: 0;
-    margin: 20px;
-    border: 1.5px;
+    margin: 15px 10px;
+    border: none;
     border-collapse: collapse;
     border-radius: 5px;
-}
-
-
-#letraBuscador::placeholder {
-    color: black;
 }
 
 select option {

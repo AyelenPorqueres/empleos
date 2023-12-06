@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@200;300&family=Lobster&family=Nunito:wght@300&family=Rosario&family=Satisfy&display=swap');
 
-
-
 .figure-turismo{
-    margin-left: 50px;
-    margin-right: 50px;
+   margin: 0 50px;
     align-items: center;
     border: 0.5px solid #68865F;
 }
@@ -45,6 +42,8 @@
 }
 
 .div-modal-turismo{
+    display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #7c9175;
     margin-bottom: 5px;
     margin-top: 10px;
@@ -58,4 +57,11 @@
 
 .subtitulo-modal-turismo{
     color:  #68865F;
+}
+
+@media screen and (max-width: 618px){
+    .div-modal-turismo{
+        display: flex;
+        flex-direction: column;
+    }
 }

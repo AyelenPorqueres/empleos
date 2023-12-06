@@ -1,22 +1,30 @@
-.serviciosContainer{
+.serviciosContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin: 1rem; */
     border-top: 2px solid #495D43;
     border-bottom: 2px solid #495D43;
     margin: 3rem 0;
 
-    & h2{
+    & h2 {
+        text-align: center;
         padding: 1.5rem;
         font-size: 35px;
-        color:#495D43;
+        color: #495D43;
     }
-    
-    & p{
+
+    .text {
         text-align: center;
         padding: 0.5rem 5rem 2rem 5rem;
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .serviciosContainer {
+        .text {
+            padding: 0 4.5rem;
+        }
     }
 }

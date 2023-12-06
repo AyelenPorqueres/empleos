@@ -73,23 +73,22 @@ export default function Home() {
     });
     setDatos(newCandidatos);
   }
-
-  return (
-    <>
-      <header>
-        <div className="d-flex flex-row align-items-center nav-logo">
-          <Logo></Logo>
-          <Nav></Nav>
-        </div>
-        <FiltroCandidatos buscar={(datos: any) => buscar(datos)} />
-      </header>
-      <main>
-        <CargarCv handleAltaCandidato={(candidato: Candidatos) => handleAltaCandidato(candidato)} />
-        <CardContainer>
-          <CardCandidatos datos={datos} key={datos.keys()}></CardCandidatos>
-        </CardContainer>
-        <Footer></Footer>
-      </main>
-    </>
-  )
-}
+    return (
+      <>
+        <header>
+          <div className="d-flex  align-items-center nav-logo">
+            <Logo></Logo>
+            <Nav></Nav>
+          </div>
+          <FiltroCandidatos buscar={(datos: any) => buscar(datos)} />
+        </header>
+        <main>
+          <CargarCv handleAltaCandidato={(candidato: Candidatos) => handleAltaCandidato(candidato)} />
+          <CardContainer>
+            <CardCandidatos datos={datos} key={datos.keys()}></CardCandidatos>
+          </CardContainer>
+          <Footer></Footer>
+        </main>
+      </>
+    )
+  }

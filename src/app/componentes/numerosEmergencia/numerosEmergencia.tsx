@@ -1,33 +1,31 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import './numerosEmergencia.css'
 
 function NumerosDeEmergencia() {
     return (
         <>
-            <div className='container-titulo-emergencia d-flex flex-column justify}-content-center align-items-center' >
-                <p className='titulo-emergencia'>NÚMEROS DE EMERGENCIA</p>
+            <div className='divTitulo d-flex flex-row' >
+                <p className='tituloEmergencia'>NÚMEROS DE EMERGENCIA</p>
+            </div>
+            <div className='emergenciaContainer d-flex flex-row'>
 
-                <div className=' emergenciaContainer d-flex flex-row justify-content-between'>
+                <div className='containerImgP'>
+                    <p className='pImg'>HOSPITAL</p>
+                    <img src="imagenes/imagenesInicio/hospital.png" className='imgEmergencia' alt="" />
+                    <p className='numero'>492105</p>
+                </div>
 
+                <div className='containerImgP' >
+                    <p className='pImg'>POLICIA</p>
+                    <img src="imagenes/imagenesInicio/policia.png" className='imgEmergencia ' alt="" />
+                    <p className='numero'>492120</p>
+                </div>
 
-                    <div className='d-flex flex-column align-items-center '>
-                        <p>HOSPITAL</p>
-                        <img src="imagenes/imagenesInicio/hospital.png" className='img-emergencia' alt="" />
-                        <p className='p-numero-emergencia'>492105</p>
-
-
-                    </div>
-                    <div className='d-flex flex-column align-items-center' >
-                        <p>POLICIA</p>
-                        <img src="imagenes/imagenesInicio/policia.png" className='img-emergencia ' alt="" />
-                        <p className='p-numero-emergencia'>492120</p>
-
-                    </div>
-                    <div className='d-flex flex-column align-items-center '>
-                        <p>BOMBEROS</p>
-                        <img src="imagenes/imagenesInicio/bomberos.png" className='img-emergencia img-bomberos' alt="" />
-                        <p className='p-numero-emergencia'>100</p>
-                    </div>
+                <div className='containerImgP'>
+                    <p className='pImg'>BOMBEROS</p>
+                    <img src="imagenes/imagenesInicio/bomberos.png" className='imgEmergencia imgBomberos' alt="" />
+                    <p className='numeroBomberos'>100</p>
                 </div>
             </div>
         </>

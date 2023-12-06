@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@200;300&family=Lobster&family=Nunito:wght@300&family=Satisfy&display=swap');
 
-.imagenPortada{
-    width: 100%;
-    margin-bottom: 10px;
-    margin-top: 15px;
+.containerPortada {
+    max-width: 100%;
+    margin: 15px auto
 }
 
-.img-portada{
-    height: 450px;
+.imgPortada {
     width: 100%;
+    height: auto;
 }
 
-.titulo-portada-turismo{
+.tituloPortada {
     font-family: 'Allura', cursive;
     font-size: 80px;
     text-align: center;
-    color :#495d43 ;
+    color: #262d23;
+}
+
+@media screen and (max-width: 376px){
+    .tituloPortada{
+        font-size: 32px;
+    }
 }

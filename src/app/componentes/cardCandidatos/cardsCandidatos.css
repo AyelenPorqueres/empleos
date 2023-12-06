@@ -1,15 +1,17 @@
 .containerCandidatos{
-  
-    background-color: #EEEDDE;
     width: 22rem;
+    background-color: #EEEDDE;
+    margin: 50px 10px;
     text-align: center;
+    text-transform: uppercase;
     border-radius: 5px;
     border: 1px solid #68865F;
-    text-transform: uppercase;
-    margin: 50px 10px;
+
+    .containerImg {
+        height: 7rem;
+    }
 
     .infoPersonal{
-        
         padding: 1rem;
 
         .textNombre{
@@ -71,10 +73,4 @@ p{
     .icon-linkedin{
         font-size: 20px;
     }
-}
-
-
-
-.contenedorImg {
-    height: 7rem;
 }

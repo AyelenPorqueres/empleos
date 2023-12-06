@@ -3,8 +3,8 @@ import './nav.css'
 
 export const Nav = () => {
     return (
-        <nav className="menu" >
-            <ul className="items">
+        <nav className="menu navbar-expand-md">
+            <ul className="items flex-row flex-column flex-md-row">
                 <Link className='links'
                     href={{ pathname: '/home', }}
                 >INICIO

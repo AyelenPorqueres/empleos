@@ -1,12 +1,19 @@
-.contenedor {
-    display: flex;
-    justify-content: center;
-    background-color: #495D43;
-    height: 70px;
-    text-align: center;
+.filter {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.label-buscador {
+.contenedor {
+    background-color: #495D43;
+    height: auto;
+
+    & div {
+        margin: 0 15px;
+    }
+}
+
+.labelBuscador {
     color: white;
     outline: 0;
 }
@@ -15,62 +22,13 @@
     height: 25px;
     background-color: #EEEDDE;
     outline: 0;
-    margin: 20px;
-    border: 1.5px;
+    margin: 15px 10px;
+    border: none;
     border-collapse: collapse;
     border-radius: 5px;
-}
-
-
-#letraBuscador::placeholder {
-    color: black;
 }
 
 select option {
     color: black;
     background-color: #EEEDDE;
-}
-
-
-.buscar {
-    padding: 5px;
-    position: relative;
-    padding: 10px
-}
-
-.aver {
-    width: 0;
-    height: 30px;
-    padding: 0px 20px;
-    font-size: 18px;
-    color: black;
-    outline: none;
-    border: 0px solid;
-    border-radius: 20px;
-    transition: all 0.6s ease;
-}
-
-.botonEnviarSubmit {
-    position: absolute;
-    width: 52px;
-    height: 50px;
-    line-height: 45px;
-    top: 0;
-    right: 0;
-    background-color: #6c965f;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-.buscar:hover input{
-    background-color: #EEEDDE;
-    width: 240px;
-}
-
-.buscar input:focus {
-    width: 240px;
 }
