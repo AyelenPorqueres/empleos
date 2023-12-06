@@ -59,7 +59,7 @@ export default function Home() {
     }
   };
 
-
+  
 
   const buscar = (datosFiltro: any) => {
     let newCandidatos: Candidatos[] = [];
