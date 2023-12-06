@@ -16,7 +16,7 @@ export const FiltroCandidatos = (props: any) => {
 
   return (
     <>
-       <div className='contenedor d-flex flex-column  align-items-center'>
+       <div className='contenedor d-flex flex-column justify-content-center align-items-center'>
             <a className='filter'
                 onClick={() => {
                     if (mostrarFiltro) {
@@ -32,7 +32,7 @@ export const FiltroCandidatos = (props: any) => {
 
     {mostrarFiltro &&
       <form
-        className="contenedor d-flex flex-row flex-wrap justify-content-center align-items-center"
+        className=" d-flex flex-row flex-wrap justify-content-center align-items-center"
         action="search">
             
         <div>

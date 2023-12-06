@@ -16,7 +16,7 @@ export const FiltroEmpleos = (props: any) => {
 
   return (
     <>
-   <div className='contenedor d-flex flex-column  align-items-center'>
+   <div className='contenedor d-flex flex-column justify-content-center align-items-center'>
             <a className='filter'
                 onClick={() => {
                     if (mostrarFiltro) {
