@@ -8,6 +8,9 @@
     margin: 30px;
     padding: 20px;
     border-right: solid white 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
 }
 .bi{
@@ -58,3 +61,25 @@ h4 {
    }
 }
 
+@media screen and (max-width: 769px){
+    .redes {
+        display: flex;
+        flex-direction: row;
+        border-bottom: solid white 2px;
+        border-right: 0px;
+
+    }
+
+    .contacto {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa {
+        width: 80%;
+        margin: 5px;
+    }
+}

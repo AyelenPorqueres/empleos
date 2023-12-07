@@ -55,7 +55,7 @@ export const Contacto = () => {
         <section id='linkcontacto'>
             <div className='d-flex flex-row contacto'>
 
-                <div className='d-flex flex-column justify-content-evenly redes'>
+                <div className='redes'>
                     <a href="https://www.facebook.com" target="_blank">
                         <i className="bi bi-facebook"></i>
                     </a>
