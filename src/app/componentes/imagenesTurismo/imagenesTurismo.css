@@ -4,6 +4,9 @@
    margin: 0 50px;
     align-items: center;
     border: 0.5px solid #68865F;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .figure-img{
@@ -17,9 +20,6 @@
    align-items: center;
    justify-content: center;
    position: absolute;
-   margin: -210px;
-   margin-left: 30px;
-   
 }
 
 .text-img-h2{
@@ -66,5 +66,10 @@
 
     .img-modal-turismo{
         width: auto;
+    }
+
+    .text-img-h2 {
+        width: auto;
+        font-size: 15px;
     }
 }
