@@ -8,8 +8,11 @@
     background-color: #495D43;
     height: auto;
 
-    & div {
-        margin: 0 15px;
+    & a {
+        & i {
+            margin: 0;
+            font-size: 20px;
+        }
     }
 }
 
@@ -31,4 +34,8 @@
 select option {
     color: black;
     background-color: #EEEDDE;
+}
+
+i{
+    font-size: 39px;
 }

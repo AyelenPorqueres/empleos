@@ -17,6 +17,7 @@
 }
 
 .formulario{
+    text-align: center;
     margin:30px;
     color:white;
     width: 45rem;
@@ -49,6 +50,8 @@ h4 {
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 35%;
+   height: auto;
    
    & iframe{
     width: 100%;

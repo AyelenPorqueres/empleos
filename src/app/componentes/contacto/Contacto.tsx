@@ -70,25 +70,25 @@ export const Contacto = () => {
                 <div className='formulario'>
                     <h4>CONTACTANOS</h4>
                     <form className="row g-3" id="form" onSubmit={(event) => enviarContacto(event)}>
-                        <div className="col-md-10">
                         <label htmlFor="validationServer01" className="form-label col-md-2">Asunto</label>
+                        <div className="col-md-10">
                             <input type="text" className={`form-control ${campoValido[0]}`} id="asunto" name="asunto" placeholder="Ingrese asunto" required></input>
                             <div id="validationServer01Feedback" className="invalid-feedback">
                                 El asunto debe tener 3 o mas caracteres.
                             </div>
                         </div>
-                        <div className="col-md-10 needs-validation">
                         <label htmlFor="validationServer02" className="form-label col-sm-2">Mail</label>
+                        <div className="col-md-10 needs-validation">
                             <input type="text" className={`form-control ${campoValido[1]}`} id="mail" name="mail" placeholder="Ingrese su mail" required></input>
                             <div id="validationServer02Feedback" className="invalid-feedback">
                                 Ingrese un mail valido
                             </div>
                         </div>
-                        <div className="col-md-10 needs-validation">
                         <label htmlFor="validationServer03" className="form-label col-sm-2">Mensaje</label>
+                        <div className="col-md-10 needs-validation">
                             <textarea className={`form-control ${campoValido[2]}`} id="mensaje" name="mensaje" placeholder="Ingrese el mensaje" required></textarea>
                             <div id="validationServer03Feedback" className="invalid-feedback">
-                                El asunto debe tener 3 o mas caracteres.
+                                El mensaje debe tener 10 o mas caracteres.
                             </div>
                         </div>
                         <div className="col-12">

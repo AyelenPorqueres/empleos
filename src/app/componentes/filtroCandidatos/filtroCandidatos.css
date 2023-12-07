@@ -9,8 +9,11 @@
     height: auto;
     text-align: center;
 
-    & div{
-        margin: 0 15px;
+    & a {
+        & i {
+            margin: 0;
+            font-size: 20px;
+        }
     }
 }
 
